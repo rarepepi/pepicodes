@@ -5,6 +5,7 @@ import MainContent from "../components/MainContent";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import MyWork from "../components/MyWork";
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -39,28 +40,23 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="">
-        <video
-          autoplay="true"
-          muted
-          loop
-          className="fixed cover -z-10 left-0 bottom-0 right-0 min-w-full min-h-full"
-        >
-          <source src="/vid/video.mp4" type="video/mp4" />
-        </video>
         <Fade>
           <Head>
             <title>Pepi Codes</title>
             <meta name="description" content="Pepi Martinez Portfolio" />
           </Head>
           <div className="w-full">
-            <div className="shadow-lg">
+            <div className="">
               <TopNav />
             </div>
             <section className="-mt-6 p-16 ">
               <MainContent />
             </section>
+            <section className="">
+              <MyWork />
+            </section>
           </div>
-          <section className="mt-16 bg-bg-light absolute bottom-0 w-full">
+          <section className="mt-16 w-full">
             <Footer />
           </section>
         </Fade>

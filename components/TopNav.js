@@ -29,8 +29,8 @@ function TopNav() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="">
-      <nav className="bg-bg-light">
+    <div className="p-4">
+      <nav className="">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -38,7 +38,7 @@ function TopNav() {
                 <Link className="" href="/">
                   <a>
                     <img
-                      className="h-8 w-8 "
+                      className="h-12 w-12"
                       src="/img/logo.png"
                       alt="Workflow"
                     />

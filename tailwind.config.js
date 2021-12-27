@@ -10,7 +10,7 @@ module.exports = {
       'primary': '#34d399',
       'secondary': '#8a5cf6',
       'danger': '#e3342f',
-      'background': '#181818',
+      'background': '#0a192f',
       'bg-light': '#282828'
     }),
     extend: {
