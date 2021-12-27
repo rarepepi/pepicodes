@@ -6,7 +6,7 @@ import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import MyWork from "../components/MyWork";
-
+import BackgroundMagic from "../components/BackgroundMagic";
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -40,12 +40,13 @@ class HomePage extends React.Component {
   render() {
     return (
       <div className="">
+        <BackgroundMagic />
         <Fade>
           <Head>
             <title>Pepi Codes</title>
             <meta name="description" content="Pepi Martinez Portfolio" />
           </Head>
-          <div className="w-full">
+          <div className="">
             <div className="">
               <TopNav />
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles";
 
 const BackgroundMagic = () => {
   return (
@@ -9,62 +9,96 @@ const BackgroundMagic = () => {
       options={{
         background: {
           color: {
-            value: "#232741",
+            value: false,
           },
-          image:
-            "url('http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png')",
           position: "50% 50%",
           repeat: "no-repeat",
-          size: "100%",
-        },
-        fullScreen: {
-          zIndex: 1,
-          enable: true,
+          size: "cover",
         },
         interactivity: {
           events: {
             onClick: {
               enable: true,
-              mode: "repulse",
+              mode: "push",
             },
             onHover: {
-              enable: true,
-              mode: "bubble",
+              mode: "repulse",
             },
           },
           modes: {
             bubble: {
-              distance: 250,
+              distance: 400,
               duration: 2,
-              opacity: 0,
-              size: 0,
+              opacity: 0.8,
+              size: 40,
             },
             grab: {
               distance: 400,
             },
-            repulse: {
-              distance: 400,
+            push: {
+              groups: ["z5000", "z7500", "z2500", "z1000"],
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            animation: {
+              h: {
+                speed: 10,
+              },
+            },
+          },
+          groups: {
+            z5000: {
+              number: {
+                value: 70,
+              },
+              zIndex: {
+                value: 50,
+              },
+            },
+            z7500: {
+              number: {
+                value: 30,
+              },
+              zIndex: {
+                value: 75,
+              },
+            },
+            z2500: {
+              number: {
+                value: 50,
+              },
+              zIndex: {
+                value: 25,
+              },
+            },
+            z1000: {
+              number: {
+                value: 40,
+              },
+              zIndex: {
+                value: 10,
+              },
+            },
           },
           links: {
             color: {
               value: "#ffffff",
             },
-            distance: 150,
             opacity: 0.4,
           },
           move: {
+            angle: {
+              value: 10,
+            },
             attract: {
               rotate: {
                 x: 600,
-                y: 600,
+                y: 1200,
               },
             },
+            direction: "right",
             enable: true,
             outModes: {
               bottom: "out",
@@ -72,41 +106,79 @@ const BackgroundMagic = () => {
               right: "out",
               top: "out",
             },
-            random: true,
-            speed: 1,
+            speed: 5,
           },
           number: {
-            density: {
-              enable: true,
-            },
-            value: 160,
+            value: 200,
           },
           opacity: {
-            random: {
-              enable: true,
-            },
-            value: {
-              min: 0,
-              max: 1,
-            },
             animation: {
-              enable: true,
               speed: 1,
-              minimumValue: 0,
+              minimumValue: 0.1,
             },
           },
+          zIndex: {
+            value: 5,
+            opacityRate: 0.5,
+          },
+        },
+        emitters: {
+          autoPlay: true,
+          fill: true,
+          life: {
+            wait: false,
+          },
+          rate: {
+            quantity: 1,
+            delay: 7,
+          },
+          shape: "square",
+          startCount: 0,
           size: {
-            random: {
-              enable: true,
+            mode: "percent",
+            height: 0,
+            width: 0,
+          },
+          particles: {
+            shape: {
+              type: "images",
+              options: {
+                images: {
+                  src: "https://particles.js.org/images/cyan_amongus.png",
+                  width: 500,
+                  height: 634,
+                },
+              },
             },
-            value: {
-              min: 1,
-              max: 3,
+            size: {
+              value: 40,
             },
-            animation: {
-              speed: 4,
-              minimumValue: 0.3,
+            move: {
+              speed: 10,
+              outModes: {
+                default: "none",
+                right: "destroy",
+              },
+              straight: true,
             },
+            zIndex: {
+              value: 0,
+            },
+            rotate: {
+              value: {
+                min: 0,
+                max: 360,
+              },
+              animation: {
+                enable: true,
+                speed: 10,
+                sync: true,
+              },
+            },
+          },
+          position: {
+            x: -5,
+            y: 55,
           },
         },
       }}

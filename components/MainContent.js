@@ -8,11 +8,11 @@ const MainContent = () => {
     <div id="Why" className="space-y-12 ">
       <Fade>
         <div className="flex flex-col justify-left mt-16 md:p-16 md:ml-32 h-screen">
-          <p className="text-green-300">Hi, my name is</p>
-          <h1 className="xl:text-6xl text-4xl font-bold text-gray-300 mt-8">
+          <p className="text-green-300 text-lg">Hi, my name is</p>
+          <h1 className="xl:text-6xl text-5xl font-bold text-gray-300 mt-8">
             Pepi Martinez
           </h1>
-          <h2 className="text-gray-400 xl:text-6xl text-4xl mt-4 font-bold">
+          <h2 className="text-gray-400 xl:text-6xl text-5xl mt-4 font-bold">
             I like to build things.
           </h2>
           <h3 className="text-gray-500  mt-4 md:w-1/2">

@@ -11,7 +11,7 @@ module.exports = {
       'secondary': '#8a5cf6',
       'danger': '#e3342f',
       'background': '#0a192f',
-      'bg-light': '#282828'
+      'bg-light': '#112240'
     }),
     extend: {
       backgroundImage: (theme) => ({
