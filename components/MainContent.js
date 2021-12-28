@@ -5,7 +5,7 @@ import Router from "next/router";
 
 const MainContent = () => {
   return (
-    <div id="Why" className="space-y-12 ">
+    <div id="Why" className="">
       <Fade>
         <div className="flex flex-col justify-left mt-16 md:p-16 md:ml-32 h-screen">
           <p className="text-green-300 text-lg">Hi, my name is</p>
@@ -32,13 +32,6 @@ const MainContent = () => {
               Github
             </a>
           </div>
-        </div>
-
-        <div>
-          <h2 className="text-gray-300 text-2xl text-center font-bold">
-            <span className="text-green-300 mr-4">01.</span>Some Things I've
-            Built
-          </h2>
         </div>
       </Fade>
     </div>

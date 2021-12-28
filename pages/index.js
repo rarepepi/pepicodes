@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import MyWork from "../components/MyWork";
 import BackgroundMagic from "../components/BackgroundMagic";
+import Papers from "../components/Papers";
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -55,6 +56,9 @@ class HomePage extends React.Component {
             </section>
             <section className="">
               <MyWork />
+            </section>
+            <section className="">
+              <Papers />
             </section>
           </div>
           <section className="mt-16 w-full">
