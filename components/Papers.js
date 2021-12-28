@@ -20,8 +20,7 @@ const Papers = () => {
                 <h2 className="text-white text-center font-bold text-xl">
                   Coins, Covid, Keynes and K-Shaped Recovery
                 </h2>
-                <h4 className="text-gray-400">Abstract</h4>
-                <p className="pt-4 ">
+                <p className="pt-4 text-gray-300">
                   Reckless monetary policy, especially in the wake of a
                   pandemic, amplifies the gap between the extreme ends of the
                   income distribution, thus exacerbating the long term effects
