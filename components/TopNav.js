@@ -62,14 +62,14 @@ function TopNav() {
               </div>
               <div className="hidden md:block right-0 absolute">
                 <a
-                  href="https://twitter.com/rarestpepi"
+                  href="https://twitter.com/rarepepi"
                   target="_blank"
                   className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   <i className="fab fa-twitter text-xl mr-2" />
                 </a>
                 <a
-                  href="https://github.com/pepimartinez"
+                  href="https://github.com/rarepepi"
                   target="_blank"
                   className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
@@ -136,21 +136,16 @@ function TopNav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {/* <Link href="/features">
-                  <a className="text-white   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
-                    Features
+                <Link to="PROJECTS" smooth="true" offset={-50}>
+                  <a className="text-green-300   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                    Projects
                   </a>
                 </Link>
-                <Link href="/top">
-                  <a className="text-white   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
-                    Top
+                <Link to="PAPERS" smooth="true" offset={-50}>
+                  <a className="text-green-300  font-bold  flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                    Papers
                   </a>
                 </Link>
-
-                <a className="text-gray-200 hover:bg-gray-700 flex justify-center font-bold text-lg	 hover:text-white px-3 py-2 rounded-md ">
-                  {gas}
-                  <i className="fas fa-gas-pump text-lg ml-2" />
-                </a> */}
                 <a
                   href="https://twitter.com/rarepepi"
                   target="_blank"
