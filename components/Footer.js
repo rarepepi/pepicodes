@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <Fade>
         <div className="flex justify-start ">
-          <p className="text-gray-400 text-sm">Built by Pepi Martinez</p>
+          <p className="text-gray-400 text-sm">Built by Pepi.</p>
         </div>
       </Fade>
     </div>

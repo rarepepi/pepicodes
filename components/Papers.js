@@ -3,7 +3,7 @@ import { Fade } from "react-reveal";
 
 const Papers = () => {
   return (
-    <>
+    <div id="PAPERS">
       <div>
         <h2 className="text-gray-300 text-2xl text-center font-bold">
           <span className="text-green-300 mr-4">02.</span>Research Papers
@@ -17,10 +17,10 @@ const Papers = () => {
               target="_blank"
             >
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
-                <h2 className="text-white text-center font-bold text-xl">
+                <h2 className="text-white text-center font-bold text-xl p-6">
                   Coins, Covid, Keynes and K-Shaped Recovery
                 </h2>
-                <p className="pt-4 text-gray-300">
+                <p className="p-8 text-gray-300">
                   Reckless monetary policy, especially in the wake of a
                   pandemic, amplifies the gap between the extreme ends of the
                   income distribution, thus exacerbating the long term effects
@@ -46,7 +46,7 @@ const Papers = () => {
           </div>
         </Fade>
       </div>
-    </>
+    </div>
   );
 };
 

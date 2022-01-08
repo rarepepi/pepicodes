@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import Link from "next/link";
+
+import { Link } from "react-scroll";
 import axios from "axios";
 const navigation = [
   { name: "Twitter", href: "#", current: false },
@@ -47,16 +48,16 @@ function TopNav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-1">
-                  {/* <Link href="/features">
-                    <a className="text-white   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
-                      Features
+                  <Link to="PROJECTS" smooth="true" offset={-50}>
+                    <a className="text-green-300   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                      Projects
                     </a>
                   </Link>
-                  <Link href="/top">
-                    <a className="text-white  font-bold  flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
-                      Top
+                  <Link to="PAPERS" smooth="true" offset={-50}>
+                    <a className="text-green-300  font-bold  flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                      Papers
                     </a>
-                  </Link> */}
+                  </Link>
                 </div>
               </div>
               <div className="hidden md:block right-0 absolute">
@@ -151,14 +152,14 @@ function TopNav() {
                   <i className="fas fa-gas-pump text-lg ml-2" />
                 </a> */}
                 <a
-                  href="https://twitter.com/rarestpepi"
+                  href="https://twitter.com/rarepepi"
                   target="_blank"
                   className="text-gray-200 flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   <i className="fab fa-twitter text-xl mr-2" />
                 </a>
                 <a
-                  href="https://github.com/pepimartinez"
+                  href="https://github.com/rarepepi"
                   target="_blank"
                   className="text-gray-200 flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >

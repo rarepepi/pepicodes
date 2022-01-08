@@ -5,7 +5,7 @@ import MainContent from "../components/MainContent";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import Head from "next/head";
-import MyWork from "../components/MyWork";
+import Projects from "../components/Projects";
 import BackgroundMagic from "../components/BackgroundMagic";
 import Papers from "../components/Papers";
 function sleep(ms) {
@@ -45,7 +45,7 @@ class HomePage extends React.Component {
         <Fade>
           <Head>
             <title>Pepi Codes</title>
-            <meta name="description" content="Pepi Martinez Portfolio" />
+            <meta name="description" content="Pepi Codes" />
           </Head>
           <div className="">
             <div className="">
@@ -55,7 +55,7 @@ class HomePage extends React.Component {
               <MainContent />
             </section>
             <section className="">
-              <MyWork />
+              <Projects />
             </section>
             <section className="">
               <Papers />
