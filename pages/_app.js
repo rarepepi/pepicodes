@@ -23,13 +23,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Pepi Codes</title>
+        <title>Pepi</title>
+        <meta property="og:title" content="Pepi" key="title" />
         <meta
-          property="og:title"
-          content="Pepi Codes - Portfolio"
-          key="title"
+          name="description"
+          content="Pepi's site displaying: projects, papers, and more."
         />
-        <meta name="description" content="Pepi's Code Repo" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
