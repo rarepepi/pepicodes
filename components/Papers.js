@@ -13,7 +13,7 @@ const Papers = () => {
         <Fade>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a
-              href="https://pepi.codes/doc/coinscovidkeynes.pdf"
+              href="https://link.springer.com/chapter/10.1007/978-3-662-63958-0_43"
               target="_blank"
             >
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
