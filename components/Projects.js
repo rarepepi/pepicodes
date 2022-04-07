@@ -18,6 +18,23 @@ const Projects = () => {
                   📘
                 </h2>
                 <h2 className="text-white text-center font-bold text-2xl mt-2">
+                  Building Beaverz
+                </h2>
+
+                <p className="p-8 ">
+                  Building Beaverz is an NFT collection made up of 10,000
+                  Beaverz.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://rugdao.lol" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
+                <h2 className="text-white text-center font-bold text-2xl">
+                  📘
+                </h2>
+                <h2 className="text-white text-center font-bold text-2xl mt-2">
                   RugDAO
                 </h2>
 
