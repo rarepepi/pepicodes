@@ -19,8 +19,8 @@ function TopNav() {
   const [gas, setGas] = useState(0);
   useEffect(async () => {
     const getData = async () => {
-      const { data } = await axios.get("https://ethgas.watch/api/gas");
-      setGas(data.normal.gwei);
+      // const { data } = await axios.get("https://ethgas.watch/api/gas");
+      // setGas(data.normal.gwei);
     };
     await getData();
     const interval = setInterval(() => {
@@ -36,7 +36,7 @@ function TopNav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <Link className="" href="/">
+                <Link className="" to="/">
                   <a>
                     <img
                       className="h-12 w-12"

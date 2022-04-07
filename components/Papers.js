@@ -6,7 +6,7 @@ const Papers = () => {
     <div id="PAPERS">
       <div>
         <h2 className="text-gray-300 text-2xl text-center font-bold">
-          <span className="text-green-300 mr-4">02.</span>Research Papers
+          <span className="text-green-300 mr-4">02.</span>Published Papers
         </h2>
       </div>
       <div className="flex flex-row flex-wrap justify-center p-16">
