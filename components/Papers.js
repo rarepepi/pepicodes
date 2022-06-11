@@ -7,7 +7,7 @@ const Papers = () => {
       <Flip right>
         <div>
           <h2 className="text-gray-300 text-2xl text-center font-bold">
-            <span className="text-green-300 mr-4">02.</span>Published Papers
+            <span className="text-green-300 mr-4">03.</span>Published Papers
           </h2>
         </div>
       </Flip>
@@ -19,6 +19,8 @@ const Papers = () => {
               target="_blank"
             >
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
+                <img src="/img/springer.jpg" className="w-32 m-auto mt-6" />
+
                 <h2 className="text-white text-center font-bold text-xl p-6">
                   Coins, Covid, Keynes and K-Shaped Recovery
                 </h2>

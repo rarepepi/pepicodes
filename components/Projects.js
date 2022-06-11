@@ -6,32 +6,27 @@ const Projects = () => {
     <div id="PROJECTS">
       <Flip left>
         <div>
-          <h2 className="text-gray-300 text-2xl text-center font-bold">
+          <h2 className="text-gray-300 md:text-2xl text-lg text-center font-bold">
             <span className="text-green-300 mr-4">02.</span>Some Things I've
             Built
           </h2>
         </div>
       </Flip>
-      <div className="flex flex-row flex-wrap justify-center p-16">
+      <div className="flex flex-row flex-wrap justify-center md:p-16 ">
         <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://buildingbeaverz.com" target="_blank">
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
-                <h2 className="text-white text-center font-bold text-2xl">🦫</h2>
-                <h2 className="text-white text-center font-bold text-2xl mt-2">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">🦫</h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
                   Building Beaverz
                 </h2>
 
-                <p className="p-8 ">
+                <p className="p-8 w-max-lg ">
                   Building Beaverz is an NFT collection made up of 10,000
                   Beaverz. At the beginning of every game there will be a puzzle
                   that every house will need to solve before they can begin
-                  playing the game and interacting with the smart contract. Once
-                  your house solves the first puzzle and has begun playing, you
-                  can use a special function in the smart contract for a boost!
-                  The boost will allow all members of your house to successfully
-                  complete transactions 100% of the time instead of just 70% of
-                  the time for the duration of the game at hand.
+                  playing the game and interacting with the smart contract. The team who wins the most points receieves awards.
                 </p>
               </div>
             </a>
@@ -41,15 +36,15 @@ const Projects = () => {
         <Slide right>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://wutfloor.xyz" target="_blank">
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
-                <h2 className="text-white text-center font-bold text-2xl">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
                   📊
                 </h2>
-                <h2 className="text-white text-center font-bold text-2xl mt-2">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
                   WutFloor
                 </h2>
 
-                <p className="p-8 ">
+                <p className="p-8  w-max-lg">
                   An NFT portfolio analyzer alpha by discovering special data.
                   Not sure what the value of your NFT portfolio is? Dont worry
                   we got you covered. With our wallet profiler. Get hourly,
@@ -64,16 +59,16 @@ const Projects = () => {
         <Slide bottom>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://numbagame.xyz" target="_blank">
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 w-96">
-                <h2 className="text-white text-center font-bold text-2xl">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
                   #️⃣
                 </h2>
 
-                <h2 className="text-white text-center font-bold text-2xl mt-2">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
                   Number Game
                 </h2>
 
-                <p className="p-8">
+                <p className="p-8 w-max-lg">
                   Number Game is an on-chain generated and stored game with a
                   prize pool. Breed numbers using their utility $MATH tokens
                   they get for owning a Genesis Number and add your numbers up
@@ -89,16 +84,16 @@ const Projects = () => {
         <Slide bottom>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://colorsonchain.com" target="_blank">
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 w-96">
-                <h2 className="text-white text-center font-bold text-2xl">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
                   🍭
                 </h2>
 
-                <h2 className="text-white text-center font-bold text-2xl mt-2">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
                   Colors On Chain
                 </h2>
 
-                <p className="p-8 text-gray-300">
+                <p className="p-8 w-max-lg text-gray-300">
                   ColorsOnChain is a breeding game with a prize pool. The first
                   of its kind. Players mint NFT colors (generative HEX codes
                   stored on-chain) which yield RGB tokens daily. You then spend

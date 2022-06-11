@@ -46,7 +46,7 @@ class HomePage extends React.Component {
         {!this.state.loading && (
           <div className="w-full flex-col justify-center">
             <BackgroundMagic />
-            <div className="overview">
+            <div className="overview-left">
               <a
                 href="https://twitter.com/rarepepi"
                 target="_blank"
@@ -66,8 +66,17 @@ class HomePage extends React.Component {
                 target="_blank"
                 className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
-                <i className="fab fa-linkedin text-xl mr-2" />
+                <i className="fab fa-linkedin text-xl mr-2 mb-12" />
               </a>
+              <svg className="ml-2.5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+              </svg>
+            </div>
+            <div className="overview-right">
+              <h2>pepimartinez@protonmail.com</h2>
+              <svg className="ml-2.5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+              </svg>
             </div>
             <Fade>
               <Head>
@@ -78,7 +87,7 @@ class HomePage extends React.Component {
                 <div className="">
                   <TopNav />
                 </div>
-                <section className="-mt-6 p-8 mb-16 ">
+                <section className="-mt-6 p-8 ">
                   <MainContent />
                 </section>
                 <section className="mb-32 p-8">
@@ -99,7 +108,7 @@ class HomePage extends React.Component {
         )}
         <style jsx>
           {`
-            .overview {
+            .overview-left {
               position: fixed;
               bottom: 2%;
               left: 5%;
@@ -107,13 +116,55 @@ class HomePage extends React.Component {
               flex-direction: column;
               z-index: 5;
             }
+            .overview-right {
+              position: fixed;
+              bottom: 2%;
+              right: -10%;
+              display: flex;
+              flex-direction: column;
+              z-index: 5;
+            }
+
+            .overview-right h2 {
+              writing-mode: vertical-rl;
+              color: white;
+              width: 80px;
+              padding-right: 47px;
+              padding-bottom: 47px;
+
+            }
+
+            @media only screen and (max-width: 1400px) {
+              .overview-right {
+                right: -12%;
+
+              }
+
+            }
 
             @media only screen and (max-width: 1200px) {
-              .overview {
+              .overview-right {
+                right: -18%;
+
+              }
+
+            }
+
+
+
+            @media only screen and (max-width: 1000px) {
+              .overview-left {
                 position: relative !important;
                 display: none !important;
               }
+              .overview-right {
+                position: relative !important;
+                display: none !important;
+
+              }
             }
+
+
           `}
         </style>
       </div>
