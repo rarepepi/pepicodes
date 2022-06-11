@@ -144,7 +144,8 @@ const BackgroundMagic = () => {
               type: "images",
               options: {
                 images: {
-                  src: "https://particles.js.org/images/cyan_amongus.png",
+                  // src: "https://particles.js.org/images/cyan_amongus.png",
+                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Moebius_strip.svg/712px-Moebius_strip.svg.png",
                   width: 500,
                   height: 634,
                 },
