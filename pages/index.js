@@ -61,6 +61,13 @@ class HomePage extends React.Component {
               >
                 <i className="fab fa-github text-xl mr-2" />
               </a>
+              <a
+                href="https://www.linkedin.com/in/pepimartinez/"
+                target="_blank"
+                className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                <i className="fab fa-linkedin text-xl mr-2" />
+              </a>
             </div>
             <Fade>
               <Head>
@@ -96,6 +103,16 @@ class HomePage extends React.Component {
               position: fixed;
               bottom: 2%;
               left: 5%;
+              display: flex;
+              flex-direction: column;
+              z-index: 5;
+            }
+
+            @media only screen and (max-width: 1200px) {
+              .overview {
+                position: relative !important;
+                display: none !important;
+              }
             }
           `}
         </style>

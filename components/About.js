@@ -3,10 +3,10 @@ import { Zoom, Fade, Flip, Slide } from "react-reveal";
 
 const About = () => {
   return (
-    <div id="ABOUT" className="p-8">
+    <div id="ABOUT" className="p-2">
       <div className="flex flex-col flex-wrap justify-center">
         <div className="flex flex-row flex-wrap justify-between sm:justify-center">
-          <div>
+          <div className="flex flex-col justify-center">
             <Flip left>
               <h1 className="text-gray-300 text-2xl text-left sm:text-center font-bold sm:mb-12">
                 {" "}
@@ -17,7 +17,7 @@ const About = () => {
               </h1>
             </Flip>
 
-            <h2 className="max-w-2xl m-auto text-left ml-44 sm:m-auto sm:text-center text-gray-400 sm:mb-12">
+            <h2 className="max-w-2xl m-auto text-left ml-44 pl-8 sm:m-auto sm:text-center text-gray-400 sm:mb-12">
               Been working in Full Stack Dev for the last 5 years of which the
               last 3 have been using Web3 stacks. <br />
               <br />
@@ -62,7 +62,7 @@ const About = () => {
           text-align: center;
         }
 
-        @media screen (max-width: 1000px) {
+        @media only screen and (max-width: 1000px) {
           .skills {
             margin: auto;
             -moz-column-count: 1; /* Firefox */
