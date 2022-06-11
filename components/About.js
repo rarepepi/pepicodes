@@ -6,18 +6,15 @@ const About = () => {
     <div id="ABOUT" className="p-2">
       <div className="flex flex-col flex-wrap justify-center">
         <div className="flex flex-row flex-wrap justify-between sm:justify-center">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center text-center">
             <Flip left>
-              <h1 className="text-gray-300 text-2xl text-left sm:text-center font-bold sm:mb-12">
+              <h1 className="text-gray-300 text-2xl font-bold sm:mb-12">
                 {" "}
-                <span className="text-green-300 ml-32 sm:m-auto ">
-                  01.{" "}
-                </span>{" "}
-                About Me
+                <span className="text-green-300 ">01. </span> About Me
               </h1>
             </Flip>
 
-            <h2 className="max-w-2xl m-auto text-left ml-44 pl-8 sm:m-auto sm:text-center text-gray-400 sm:mb-12">
+            <h2 className="max-w-2xl m-auto  pl-8 md:text-center text-gray-400 sm:mb-12">
               Been working in Full Stack Dev for the last 5 years of which the
               last 3 have been using Web3 stacks. <br />
               <br />
@@ -46,10 +43,9 @@ const About = () => {
               </li>
             </ul>
           </div>
-
           <img
             src="/img/logo.png"
-            className="max-w-xs mr-44 sm:m-auto hover:animate-pulse ring-8 ring-green-300"
+            className="max-w-xs hover:animate-pulse ring-8 ring-green-300"
           ></img>
         </div>
       </div>
@@ -68,6 +64,8 @@ const About = () => {
             -moz-column-count: 1; /* Firefox */
             -webkit-column-count: 1; /* Safari and Chrome */
             column-count: 1;
+            margin-top: 48px !important;
+            margin-bottom: 48px !important;
           }
         }
       `}</style>

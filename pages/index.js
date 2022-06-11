@@ -44,7 +44,7 @@ class HomePage extends React.Component {
       <div className="flex justify-center flex-col">
         {this.state.loading && <span className="loader"></span>}
         {!this.state.loading && (
-          <>
+          <div className="w-full flex-col justify-center">
             <BackgroundMagic />
             <div className="overview">
               <a
@@ -74,7 +74,7 @@ class HomePage extends React.Component {
                 <title>Pepi Codes</title>
                 <meta name="description" content="Pepi Codes" />
               </Head>
-              <div className="">
+              <div className="w-full">
                 <div className="">
                   <TopNav />
                 </div>
@@ -95,7 +95,7 @@ class HomePage extends React.Component {
                 <Footer />
               </section>
             </Fade>
-          </>
+          </div>
         )}
         <style jsx>
           {`
