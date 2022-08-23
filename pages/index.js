@@ -68,13 +68,28 @@ class HomePage extends React.Component {
               >
                 <i className="fab fa-linkedin text-xl mr-2 mb-12" />
               </a>
-              <svg className="ml-2.5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+              <svg
+                className="ml-2.5"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
                 <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
               </svg>
             </div>
             <div className="overview-right">
-              <h2>pepimartinez@protonmail.com</h2>
-              <svg className="ml-2.5" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+              <li
+                value="pepimartinez@protonmail.com"
+                onClick={(e) => {
+                  navigator.clipboard.writeText(e.target.value);
+                }}
+              >
+                pepimartinez@protonmail.com
+              </li>
+              <svg
+                className="ml-2.5"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+              >
                 <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
               </svg>
             </div>
@@ -125,32 +140,25 @@ class HomePage extends React.Component {
               z-index: 5;
             }
 
-            .overview-right h2 {
+            .overview-right li {
               writing-mode: vertical-rl;
               color: white;
               width: 80px;
               padding-right: 47px;
               padding-bottom: 47px;
-
             }
 
             @media only screen and (max-width: 1400px) {
               .overview-right {
                 right: -12%;
-
               }
-
             }
 
             @media only screen and (max-width: 1200px) {
               .overview-right {
                 right: -18%;
-
               }
-
             }
-
-
 
             @media only screen and (max-width: 1000px) {
               .overview-left {
@@ -160,11 +168,8 @@ class HomePage extends React.Component {
               .overview-right {
                 position: relative !important;
                 display: none !important;
-
               }
             }
-
-
           `}
         </style>
       </div>

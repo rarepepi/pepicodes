@@ -17,7 +17,9 @@ const Projects = () => {
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://buildingbeaverz.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
-                <h2 className="text-white text-center font-bold md:text-2xl text-lg">🦫</h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  🦫
+                </h2>
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
                   Building Beaverz
                 </h2>
@@ -26,7 +28,8 @@ const Projects = () => {
                   Building Beaverz is an NFT collection made up of 10,000
                   Beaverz. At the beginning of every game there will be a puzzle
                   that every house will need to solve before they can begin
-                  playing the game and interacting with the smart contract. The team who wins the most points receieves awards.
+                  playing the game and interacting with the smart contract. The
+                  team who wins the most points receieves awards.
                 </p>
               </div>
             </a>
@@ -58,6 +61,28 @@ const Projects = () => {
         </Slide>
         <Slide bottom>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://hootproject.com" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  🦉
+                </h2>
+
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Hoot Project
+                </h2>
+
+                <p className="p-8 w-max-lg">
+                  Hoot is a fully on-chain collection inspired by the novel Loot
+                  Project. Each NFT’s attributes and metadata correspond to the
+                  Moonbird with the same ID, resulting in a collection of
+                  exactly 10,000 tokens.
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide bottom>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://numbagame.xyz" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -76,30 +101,6 @@ const Projects = () => {
                   challenges to win prizes. You can't add the same two numbers
                   twice and you must own the numbers you breed. Most of all,
                   just have fun ;)
-                </p>
-              </div>
-            </a>
-          </div>
-        </Slide>
-        <Slide bottom>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
-            <a href="https://colorsonchain.com" target="_blank">
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
-                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
-                  🍭
-                </h2>
-
-                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
-                  Colors On Chain
-                </h2>
-
-                <p className="p-8 w-max-lg text-gray-300">
-                  ColorsOnChain is a breeding game with a prize pool. The first
-                  of its kind. Players mint NFT colors (generative HEX codes
-                  stored on-chain) which yield RGB tokens daily. You then spend
-                  those tokens to breed using additive color theory to mix 2
-                  colors into something new (their baby). Get hourly, daily,
-                  monthly, and all time data
                 </p>
               </div>
             </a>

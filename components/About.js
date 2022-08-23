@@ -12,48 +12,44 @@ const About = () => {
                 <span className="text-green-300 ">01. </span> About Me
               </h1>
             </Flip>
+            <img
+              src="/img/logo.png"
+              className="max-w-xl hover:animate-pulse ring-8 xs:ml-44 m-auto flex md:w-72 w-36 justify-center ring-green-300"
+            ></img>
 
-            <h2 className=" m-auto   md:text-center text-gray-400 sm:mb-12">
-              Recieved my own personal first computer at 5 year old. Got into hacking, then got in trouble at school and transitioned into application dev. Now I've been working in Full Stack Dev for the last 5 years of which the
-              last 3 have been using a Web3 tech stack. <br />
+            <h2 className=" m-auto   md:text-center text-gray-300 my-12">
+              I got my first computer when I was 5 years old, and I never got
+              off. Now, a full stack dev with 5 years of experience building web
+              applications and 2 years building Dapps on Ethereum.
               <br />
-
-
+              <img className="w-16 m-auto mt-4" src="/img/nyu.png"></img>
               Bachelor in Computer Science
               <br />
-              @
-              <img className="w-16 m-auto mt-4" src="/img/nyu.png"></img>
               <br />
-              <br />
-
               <span className="text-gray-300">
                 Here are some of my favorite technologies:
               </span>
             </h2>
             <ul className="skills text-gray-300 ">
               <li>
-                <span className="text-green-300 font-bold">~</span> Solidity
-              </li>
-              <li>
-                <span className="text-green-300 font-bold">~</span> Python
+                <span className="text-green-300 font-bold">~</span> TypeScript
               </li>
               <li>
                 <span className="text-green-300 font-bold">~</span> Node.js
               </li>
               <li>
+                <span className="text-green-300 font-bold">~</span> Python
+              </li>
+              <li>
+                <span className="text-green-300 font-bold">~</span> Solidity
+              </li>
+              <li>
                 <span className="text-green-300 font-bold">~</span> Go
               </li>
               <li>
-                <span className="text-green-300 font-bold">~</span> React
-              </li>
-              <li>
-                <span className="text-green-300 font-bold">~</span> MongoDB
+                <span className="text-green-300 font-bold">~</span> Postgres
               </li>
             </ul>
-            <img
-              src="/img/logo.png"
-              className="max-w-xl hover:animate-pulse ring-8 xs:ml-44 m-auto flex md:w-96 w-36 justify-center ring-green-300"
-            ></img>
           </div>
         </div>
       </div>
