@@ -15,6 +15,42 @@ const Projects = () => {
       <div className="flex flex-row flex-wrap justify-center md:p-16 ">
         <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://blockery.app" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  📈
+                </h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Blockery
+                </h2>
+
+                <p className="p-8 w-max-lg ">
+                  Your new home of NFT Analytics and Knowledge.
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide right>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://www.alphaexplorer.xyz/" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  ✨
+                </h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Alpha Explorers
+                </h2>
+
+                <p className="p-8 w-max-lg ">
+                  The most powerful tools in web3 all at your fingertips.
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide left>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://buildingbeaverz.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -59,7 +95,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide bottom>
+        <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://hootproject.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
@@ -81,7 +117,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide bottom>
+        <Slide right>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://numbagame.xyz" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
