@@ -50,21 +50,21 @@ class HomePage extends React.Component {
               <a
                 href="https://twitter.com/rarepepi"
                 target="_blank"
-                className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 <i className="fab fa-twitter text-xl mr-2" />
               </a>
               <a
                 href="https://github.com/rarepepi"
                 target="_blank"
-                className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 <i className="fab fa-github text-xl mr-2" />
               </a>
               <a
                 href="https://www.linkedin.com/in/pepimartinez/"
                 target="_blank"
-                className="text-gray-200 hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 <i className="fab fa-linkedin text-xl mr-2 mb-12" />
               </a>
@@ -130,6 +130,7 @@ class HomePage extends React.Component {
               display: flex;
               flex-direction: column;
               z-index: 5;
+              width: 86px;
             }
             .overview-right {
               position: fixed;
