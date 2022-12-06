@@ -2,6 +2,8 @@ import Head from "next/head";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
+import Script from "next/script";
+
 import "tailwindcss/tailwind.css";
 import "../styles/main.css";
 function MyApp({ Component, pageProps }) {
