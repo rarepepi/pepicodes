@@ -38,16 +38,16 @@ const About = () => {
                 <span className="text-green-300 font-bold">~</span> Node.js
               </li>
               <li>
-                <span className="text-green-300 font-bold">~</span> Python
+                <span className="text-green-300 font-bold">~</span> React
               </li>
               <li>
                 <span className="text-green-300 font-bold">~</span> Solidity
               </li>
               <li>
-                <span className="text-green-300 font-bold">~</span> Go
+                <span className="text-green-300 font-bold">~</span> Postgres
               </li>
               <li>
-                <span className="text-green-300 font-bold">~</span> Postgres
+                <span className="text-green-300 font-bold">~</span> Python
               </li>
             </ul>
           </div>
