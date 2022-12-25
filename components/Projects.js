@@ -15,6 +15,60 @@ const Projects = () => {
       <div className="flex flex-row flex-wrap justify-center md:p-16 ">
         <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://language.help" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  🗺️
+                </h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Language.help
+                </h2>
+
+                <p className="p-8 w-max-lg ">
+                  A better translator than Google, using GPT-3.5
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide right>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://blockery.app" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  🖼️
+                </h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Art Gobblers Bot
+                </h2>
+
+                <p className="p-8 w-max-lg ">
+                  A bot that tracks gobbles and glams to send into discord.
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide left>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://summify.ai" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  📝
+                </h2>
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Summify.ai
+                </h2>
+
+                <p className="p-8 w-max-lg ">
+                  Summarizing your favorite discord.
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide right>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://blockery.app" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -31,7 +85,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide right>
+        <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://www.alphaexplorer.xyz/" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
@@ -49,7 +103,8 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide left>
+
+        <Slide right>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://buildingbeaverz.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg">
@@ -71,8 +126,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-
-        <Slide right>
+        <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://wutfloor.xyz" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
@@ -95,7 +149,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide left>
+        <Slide right>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://hootproject.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
@@ -117,7 +171,7 @@ const Projects = () => {
             </a>
           </div>
         </Slide>
-        <Slide right>
+        <Slide left>
           <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
             <a href="https://numbagame.xyz" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
@@ -137,6 +191,32 @@ const Projects = () => {
                   challenges to win prizes. You can't add the same two numbers
                   twice and you must own the numbers you breed. Most of all,
                   just have fun ;)
+                </p>
+              </div>
+            </a>
+          </div>
+        </Slide>
+        <Slide right>
+          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+            <a href="https://colorsonchain.com" target="_blank">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg">
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg">
+                  🎨
+                </h2>
+
+                <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
+                  Colors On Chain
+                </h2>
+
+                <p className="p-8 w-max-lg">
+                  ColorsOnChain is a breeding game with a prize pool. The first
+                  of its kind. Players mint NFT colors (generative HEX codes
+                  stored on-chain) which yield RGB tokens daily. You then spend
+                  those tokens to breed using additive color theory to mix 2
+                  colors into something new (their baby). The first player to
+                  mint pure white (#FFFFFF) wins it all. The game is simply
+                  mathematical... get out your calculators and may the best
+                  breeder win!
                 </p>
               </div>
             </a>
