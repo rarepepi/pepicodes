@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         "bg-header": "url('/img/bg-header.png')",
+        "hoot": "url('/img/hoot.png')",
       }),
       zIndex: {
 
