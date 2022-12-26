@@ -111,7 +111,7 @@ const HomePage = () => {
               <section className="mb-32 p-8 overflow-hidden">
                 <Projects />
               </section>
-              <section className="mb-32 p-8">
+              <section className="mb-32 p-8 overflow-hidden">
                 <Papers />
               </section>
             </div>
