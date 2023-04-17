@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:title" content="Pepi" key="title" />
         <meta
           name="description"
-          content="Pepi's site displaying: projects, papers, and more."
+          content="Pepi Martinez personal site displaying: projects, papers, and more."
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -55,7 +55,8 @@ function MyApp({ Component, pageProps }) {
           type: "website",
           url: "https://pepi.codes",
           title: "Pepi Codes - Portfolio",
-          description: "Cool projects",
+          description:
+            "Pepi Martinez personal site displaying: projects, papers, and more.",
           images: [
             {
               url: "https://pepi.codes/img/logo.png",

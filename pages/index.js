@@ -96,7 +96,10 @@ const HomePage = () => {
           <Fade>
             <Head>
               <title>Pepi Codes</title>
-              <meta name="description" content="Pepi Codes" />
+              <meta
+                name="description"
+                content="Pepi Martinez personal site displaying: projects, papers, and more."
+              />
             </Head>
             <div className="w-full">
               <div className="">
