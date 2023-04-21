@@ -213,7 +213,11 @@ const Projects = () => {
         </div>
         <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
           <Slide>
-            <a href="https://wsbscraper.com/" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/rarepepi/wsbscraper"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
                   🧮
