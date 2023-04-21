@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@next/font": "13.1.6",
@@ -24,9 +25,9 @@
     "next": "13.1.6",
     "next-seo": "^4.28.1",
     "react": "18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.1.1",
-    "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.4",
     "react-tsparticles": "^1.37.5",
     "tsparticles": "^1.35.4",

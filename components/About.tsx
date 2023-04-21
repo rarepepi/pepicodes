@@ -1,5 +1,4 @@
-// @ts-ignore:next-line
-import { Flip } from "react-reveal";
+import { Flip } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -7,7 +6,7 @@ const About = () => {
       <div className="flex flex-col flex-wrap justify-center">
         <div className="flex flex-row flex-wrap justify-between sm:justify-center">
           <div className="flex flex-col justify-center text-center max-w-xl">
-            <Flip left>
+            <Flip>
               <h1 className="text-gray-300 text-2xl font-bold mb-12">
                 <span className="text-green-300 ">01. </span> About Me
               </h1>

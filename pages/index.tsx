@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-// @ts-ignore:next-line
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import MainContent from "../components/MainContent";
 import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";

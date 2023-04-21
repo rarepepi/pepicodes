@@ -1,10 +1,9 @@
-// @ts-ignore:next-line
-import { Fade, Flip } from "react-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 
 const Papers = () => {
   return (
     <div id="PAPERS">
-      <Flip right>
+      <Flip>
         <div>
           <h2 className="text-gray-300 text-2xl text-center font-bold">
             <span className="text-green-300 mr-4">03.</span>Research Papers
@@ -12,8 +11,8 @@ const Papers = () => {
         </div>
       </Flip>
       <div className="flex flex-row flex-wrap justify-center p-16">
-        <Fade>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Fade>
             <a
               href="https://link.springer.com/chapter/10.1007/978-3-662-63958-0_43"
               target="_blank"
@@ -47,8 +46,8 @@ const Papers = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </div>
     </div>
   );

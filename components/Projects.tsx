@@ -1,10 +1,9 @@
-// @ts-ignore:next-line
-import { Flip, Slide } from "react-reveal";
+import { Flip, Slide } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <div id="PROJECTS">
-      <Flip left>
+      <Flip>
         <div>
           <h2 className="text-gray-300 md:text-2xl text-lg text-center font-bold">
             <span className="text-green-300 mr-4">02.</span>Some Things I've
@@ -13,8 +12,9 @@ const Projects = () => {
         </div>
       </Flip>
       <div className="flex flex-row flex-wrap justify-center md:p-16 ">
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+        <div></div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://language.help" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -29,10 +29,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a
               href="https://github.com/rarepepi/artgobblers-discord-bot"
               target="_blank"
@@ -50,10 +50,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://summify.ai" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -68,10 +68,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://blockery.app" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -86,10 +86,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://www.alphaexplorer.xyz/" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -104,11 +104,11 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
 
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://buildingbeaverz.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -121,10 +121,10 @@ const Projects = () => {
                 <p className="p-8 w-max-lg ">A team based NFT game.</p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://wutfloor.xyz" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -137,10 +137,10 @@ const Projects = () => {
                 <p className="p-8  w-max-lg">An NFT portfolio analyzer.</p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://www.hootproject.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -156,10 +156,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://numbergame.io" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -173,10 +173,10 @@ const Projects = () => {
                 <p className="p-8 w-max-lg">A math challenge through NFTs.</p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://colorsonchain.com" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -192,10 +192,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide left>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://wsbscraper.com/" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -211,10 +211,10 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
-        <Slide right>
-          <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          </Slide>
+        </div>
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+          <Slide>
             <a href="https://github.com/rarepepi/alfred" target="_blank">
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96 min-w">
                 <h2 className="text-white text-center font-bold md:text-2xl text-lg">
@@ -231,8 +231,8 @@ const Projects = () => {
                 </p>
               </div>
             </a>
-          </div>
-        </Slide>
+          </Slide>
+        </div>
       </div>
       <style jsx>{``}</style>
     </div>

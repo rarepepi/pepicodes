@@ -1,10 +1,9 @@
-// @ts-ignore:next-line
-import { Slide } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const MainContent = () => {
   return (
     <div id="Why" className="">
-      <Slide left>
+      <Fade>
         <div className="flex flex-col justify-left mt-16 md:p-16 md:ml-32 h-screen">
           <p className="text-green-300 text-lg">Hi, my name is</p>
           <h1 className="xl:text-6xl text-5xl font-bold text-gray-200 mt-8">
@@ -31,7 +30,7 @@ const MainContent = () => {
             </a>
           </div>
         </div>
-      </Slide>
+      </Fade>
     </div>
   );
 };

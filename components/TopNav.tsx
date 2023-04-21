@@ -1,6 +1,5 @@
 import { useState } from "react";
-// @ts-ignore:next-line
-import { Zoom } from "react-reveal";
+import { Zoom } from "react-awesome-reveal";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 
