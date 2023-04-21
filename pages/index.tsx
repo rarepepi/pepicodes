@@ -39,7 +39,10 @@ export default function Home() {
                   rel="noreferrer"
                   className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  <i className="fab fa-twitter text-xl mr-2" />
+                  <i
+                    className="fa fa-twitter text-xl mr-2"
+                    aria-hidden="true"
+                  />
                 </a>
                 <a
                   href="https://github.com/rarepepi"
@@ -47,7 +50,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  <i className="fab fa-github text-xl mr-2" />
+                  <i className="fa fa-github text-xl mr-2" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/pepimartinez/"
@@ -55,7 +58,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  <i className="fab fa-linkedin text-xl mr-2 mb-12" />
+                  <i className="fa fa-linkedin text-xl mr-2 mb-12" />
                 </a>
                 <svg
                   className="ml-2.5"
