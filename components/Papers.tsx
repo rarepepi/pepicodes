@@ -16,6 +16,7 @@ const Papers = () => {
             <a
               href="https://link.springer.com/chapter/10.1007/978-3-662-63958-0_43"
               target="_blank"
+              rel="noreferrer"
             >
               <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
                 <img src="/img/springer.jpg" className="w-32 m-auto mt-6" />
