@@ -1,5 +1,3 @@
 # Pepi Codes
 
-- welcome
-
-by me
+- A Portfolio website by Pepi
