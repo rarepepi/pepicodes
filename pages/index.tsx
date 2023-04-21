@@ -26,6 +26,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Pepi Martinez</title>
+        <meta name="description" content="Pepi Martinez" />
+      </Head>
       <main>
         <div className="flex justify-center flex-col">
           {loading && <span className="loader"></span>}
