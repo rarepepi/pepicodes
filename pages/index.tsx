@@ -1,25 +1,13 @@
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
+import MainContent from "../components/MainContent";
+import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import Projects from "../components/Projects";
 import BackgroundMagic from "../components/BackgroundMagic";
-import dynamic from "next/dynamic";
-
-const MainContent = dynamic(() => import("../components/MainContent"), {
-  ssr: false,
-});
-const Projects = dynamic(() => import("../components/Projects"), {
-  ssr: false,
-});
-const Papers = dynamic(() => import("../components/Papers"), {
-  ssr: false,
-});
-const About = dynamic(() => import("../components/About"), {
-  ssr: false,
-});
-const TopNav = dynamic(() => import("../components/TopNav"), {
-  ssr: false,
-});
+import Papers from "../components/Papers";
+import About from "../components/About";
 
 function sleep(ms: any) {
   return new Promise((resolve) => setTimeout(resolve, ms));
