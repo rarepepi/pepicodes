@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import TopNav from "../components/TopNav";
 import Footer from "../components/Footer";
 import Head from "next/head";
 import BackgroundMagic from "../components/BackgroundMagic";
@@ -16,6 +15,9 @@ const Papers = dynamic(() => import("../components/Papers"), {
   ssr: false,
 });
 const About = dynamic(() => import("../components/About"), {
+  ssr: false,
+});
+const TopNav = dynamic(() => import("../components/TopNav"), {
   ssr: false,
 });
 
