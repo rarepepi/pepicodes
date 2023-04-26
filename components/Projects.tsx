@@ -92,7 +92,7 @@ const Projects = () => {
         <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
           <Slide>
             <a
-              href="https://www.alphaexplorer.xyz/"
+              href="https://alpha-explorer.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
@@ -115,7 +115,7 @@ const Projects = () => {
         <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
           <Slide>
             <a
-              href="https://buildingbeaverz.com"
+              href="https://busy-beaverz.vercel.app"
               target="_blank"
               rel="noreferrer"
             >
