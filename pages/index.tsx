@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pepi Martinez</title>
-        <meta name="description" content="Pepi Martinez" />
+        <title>Pepi Codes</title>
+        <meta name="description" content="Pepi's Personal Website" />
       </Head>
       <main>
         <div className="flex justify-center flex-col">
@@ -100,7 +100,7 @@ export default function Home() {
                   <title>Pepi Codes</title>
                   <meta
                     name="description"
-                    content="Pepi Martinez personal site displaying: projects, papers, and more."
+                    content="Pepi's personal site displaying: projects, papers, and more."
                   />
                 </Head>
                 <div className="w-full">

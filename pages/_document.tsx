@@ -34,7 +34,7 @@ export default function Document() {
           url: "https://pepi.codes",
           title: "Pepi Codes - Portfolio",
           description:
-            "Pepi Martinez personal site displaying: projects, papers, and more.",
+            "Pepi's personal site displaying: projects, papers, and more.",
           images: [
             {
               url: "https://pepi.codes/img/logo.png",
