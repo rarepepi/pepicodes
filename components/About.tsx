@@ -18,14 +18,14 @@ const About = () => {
               ></img>
 
               <h2 className=" m-auto   md:text-center text-gray-300 my-12">
-                Ever since I got my first computer at the age of 5, I've been
-                captivated by the world of technology. Today, I'm a full-stack
-                software engineer with 5 years of experience in creating web
-                applications and 2 years of expertise in building decentralized
-                applications (DApps) on Ethereum.
+                Ever since I got my first computer at the age of 5, I&apos;ve
+                been captivated by the world of technology. Today, I&apos;m a
+                full-stack software engineer with 5 years of experience in
+                creating web applications and 2 years of expertise in building
+                decentralized applications (DApps) on Ethereum.
                 <br />
                 <img className="w-16 m-auto mt-4" src="/img/nyu.png" />
-                Bachelor's in Computer Science
+                Bachelor&apos;s in Computer Science
                 <br />
                 <br />
                 <span className="text-gray-300">
