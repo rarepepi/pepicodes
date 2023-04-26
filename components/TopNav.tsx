@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Zoom } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 
@@ -8,7 +8,7 @@ function TopNav() {
 
   return (
     <div className="p-4">
-      <Zoom>
+      <Fade delay={750}>
         <nav className="">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
@@ -126,7 +126,7 @@ function TopNav() {
             )}
           </Transition>
         </nav>
-      </Zoom>
+      </Fade>
     </div>
   );
 }
