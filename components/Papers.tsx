@@ -1,15 +1,15 @@
-import { Fade, Flip } from "react-awesome-reveal";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 const Papers = () => {
   return (
     <div id="PAPERS">
-      <Flip>
+      <Zoom>
         <div>
           <h2 className="text-gray-300 text-2xl text-center font-bold">
             <span className="text-green-300 mr-4">03.</span>Research Papers
           </h2>
         </div>
-      </Flip>
+      </Zoom>
       <div className="flex flex-row flex-wrap justify-center p-16">
         <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
           <Fade>
