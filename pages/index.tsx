@@ -37,59 +37,63 @@ export default function Home() {
             <div className="w-full flex-col justify-center ">
               <BackgroundMagic />
               <div className="overview-left">
-                <a
-                  href="https://twitter.com/rarepepi"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <i
-                    className="fa fa-twitter text-xl mr-2"
-                    aria-hidden="true"
-                  />
-                </a>
-                <a
-                  href="https://github.com/rarepepi"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <i className="fa fa-github text-xl mr-2" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pepimartinez/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <i className="fa fa-linkedin text-xl mr-2 mb-12" />
-                </a>
-                <svg
-                  className="ml-2.5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
-                </svg>
+                <Fade delay={500}>
+                  <a
+                    href="https://twitter.com/rarepepi"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    <i
+                      className="fa fa-twitter text-xl mr-2"
+                      aria-hidden="true"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/rarepepi"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    <i className="fa fa-github text-xl mr-2" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/pepimartinez/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    <i className="fa fa-linkedin text-xl mr-2 mb-12" />
+                  </a>
+                  <svg
+                    className="ml-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+                  </svg>
+                </Fade>
               </div>
               <div className="overview-right">
-                <li
-                  className="hover:cursor-copy"
-                  onClick={(e) => {
-                    navigator.clipboard.writeText(
-                      "pepimartinez@protonmail.com"
-                    );
-                  }}
-                >
-                  pepimartinez@protonmail.com
-                </li>
-                <svg
-                  className="ml-2.5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                >
-                  <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
-                </svg>
+                <Fade delay={500}>
+                  <li
+                    className="hover:cursor-copy"
+                    onClick={(e) => {
+                      navigator.clipboard.writeText(
+                        "pepimartinez@protonmail.com"
+                      );
+                    }}
+                  >
+                    pepimartinez@protonmail.com
+                  </li>
+                  <svg
+                    className="ml-2.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                  >
+                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+                  </svg>
+                </Fade>
               </div>
               <Fade>
                 <Head>
