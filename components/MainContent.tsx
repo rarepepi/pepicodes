@@ -17,7 +17,7 @@ const MainContent = () => {
         </Fade>
         <Fade triggerOnce delay={750}>
           <h3 className="text-gray-400  mt-4 md:w-1/2">
-            I&#39;m a software engineer passionate about decentrailized
+            I&#39;m a software engineer passionate about decentralized
             applications. My current focus includes smart contracts,
             <span className="text-green-300">NFTs, DAOs, and DeFi, </span>
             as well as any innovative projects that pique my curiosity.
