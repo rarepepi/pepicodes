@@ -5,21 +5,21 @@ const MainContent = () => {
     <div id="Why" className="">
       <div className="flex flex-col justify-left mt-16 md:p-16 md:ml-32 h-screen">
         <Fade triggerOnce delay={250}>
-          <p className="text-green-300 text-lg">Hi, my name is</p>
+          <p className="text-green-100 text-lg">Hi, my name is</p>
           <h1 className="xl:text-6xl text-5xl font-bold text-gray-200 mt-8">
             Pepi
           </h1>
         </Fade>
         <Fade triggerOnce delay={500}>
-          <h2 className="text-gray-300 xl:text-6xl text-5xl mt-4 font-bold">
+          <h2 className="text-gray-200 xl:text-6xl text-5xl mt-4 font-bold">
             I like to build things.
           </h2>
         </Fade>
         <Fade triggerOnce delay={750}>
-          <h3 className="text-gray-400  mt-4 md:w-1/2">
+          <h3 className="text-gray-300  mt-4 md:w-1/2">
             I&#39;m a software engineer passionate about decentralized
             applications. My current focus includes smart contracts,
-            <span className="text-green-300">NFTs, DAOs, and DeFi, </span>
+            <span className="text-green-300"> NFTs, DAOs, and DeFi, </span>
             as well as any innovative projects that pique my curiosity.
           </h3>
         </Fade>
