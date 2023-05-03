@@ -50,3 +50,69 @@
     opacity: 1;
   }
 }
+
+body:not(.loaded) .fade-in {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.overview-left {
+  position: fixed;
+  bottom: 2%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  width: 86px;
+}
+.overview-right {
+  position: fixed;
+  bottom: 2%;
+  right: -10%;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.overview-right a {
+  writing-mode: vertical-rl;
+  color: white;
+  width: 80px;
+  padding-right: 47px;
+  padding-bottom: 47px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .overview-right {
+    right: -12%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .overview-right {
+    right: -18%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .overview-left {
+    position: relative !important;
+    display: none !important;
+  }
+  .overview-right {
+    position: relative !important;
+    display: none !important;
+  }
+}
