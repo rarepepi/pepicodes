@@ -17,7 +17,7 @@ function TopNav() {
                   <Link className="" to="/">
                     <a>
                       <img
-                        className="h-12 w-12"
+                        className="h-12 w-12 motion-safe:hover:scale-110"
                         src="/img/logo.png"
                         alt="Workflow"
                       />
