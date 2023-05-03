@@ -17,12 +17,13 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    async function doAsyncTask() {
+    async function addBodyClass() {
       await sleep(2000);
+      document.body.classList.add("loaded");
       setLoading(false);
     }
 
-    doAsyncTask();
+    addBodyClass();
   }, []);
 
   return (
@@ -35,11 +36,11 @@ export default function Home() {
         />
       </Head>
       <main>
-        <div className="flex justify-center flex-col">
+        <div className="w-full flex-col justify-center ">
           {loading ? (
             <span className="loader"></span>
           ) : (
-            <div className="w-full flex-col justify-center ">
+            <div className="w-full flex-col justify-center fade-in ">
               <BackgroundMagic />
               <div className="overview-left">
                 <Fade delay={500}>
@@ -119,58 +120,6 @@ export default function Home() {
               </section>
             </div>
           )}
-          <style jsx>
-            {`
-              .overview-left {
-                position: fixed;
-                bottom: 2%;
-                left: 5%;
-                display: flex;
-                flex-direction: column;
-                z-index: 5;
-                width: 86px;
-              }
-              .overview-right {
-                position: fixed;
-                bottom: 2%;
-                right: -10%;
-                display: flex;
-                flex-direction: column;
-                z-index: 5;
-              }
-
-              .overview-right a {
-                writing-mode: vertical-rl;
-                color: white;
-                width: 80px;
-                padding-right: 47px;
-                padding-bottom: 47px;
-              }
-
-              @media only screen and (max-width: 1400px) {
-                .overview-right {
-                  right: -12%;
-                }
-              }
-
-              @media only screen and (max-width: 1200px) {
-                .overview-right {
-                  right: -18%;
-                }
-              }
-
-              @media only screen and (max-width: 1000px) {
-                .overview-left {
-                  position: relative !important;
-                  display: none !important;
-                }
-                .overview-right {
-                  position: relative !important;
-                  display: none !important;
-                }
-              }
-            `}
-          </style>
         </div>
       </main>
     </>
