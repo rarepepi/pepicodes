@@ -3,6 +3,36 @@ import { Zoom, Fade } from "react-awesome-reveal";
 const Projects = () => {
   const projects = [
     {
+      title: "Summify.ai",
+      description: "Summarizing your favorite discord.",
+      link: "https://summify.ai",
+      icon: "📝",
+    },
+    {
+      title: "Blockery",
+      description: "Your new home of NFT Analytics and Knowledge.",
+      link: "https://blockery.app",
+      icon: "📈",
+    },
+    {
+      title: "GenArts",
+      description: "AI generated art.",
+      link: "https://genarts.ai",
+      icon: "🖌️",
+    },
+    {
+      title: "DefNotGoogle",
+      description: "AI powered search engine.",
+      link: "https://www.defnotgoogle.com/",
+      icon: "🔎",
+    },
+    {
+      title: "WutFloor",
+      description: "An NFT portfolio analyzer.",
+      link: "https://wutfloor.xyz",
+      icon: "📊",
+    },
+    {
       title: "biorxiv.ai",
       description: "The AI Professor for Biology",
       link: "https://biorxiv.ai",
@@ -13,6 +43,12 @@ const Projects = () => {
       description: "The AI Professor for Medicine",
       link: "https://medrxiv.ai",
       icon: "⚕️",
+    },
+    {
+      title: "PepeScan",
+      description: "A $PEPE transaction explorer.",
+      link: "https://pepescan.vip",
+      icon: "🐸",
     },
     {
       title: "Language.help",
@@ -27,19 +63,14 @@ const Projects = () => {
       icon: "🖼️",
     },
     {
-      title: "Summify.ai",
-      description: "Summarizing your favorite discord.",
-      link: "https://summify.ai",
-      icon: "📝",
+      title: "DefNotNewYorkTimes",
+      description: "A parody of the New York Times written by AI.",
+      link: "https://def-not-new-york-times-production.up.railway.app/",
+      icon: "🖼️",
     },
+
     {
-      title: "Blockery",
-      description: "Your new home of NFT Analytics and Knowledge.",
-      link: "https://blockery.app",
-      icon: "📈",
-    },
-    {
-      title: "MargsGo",
+      title: "MarsGo",
       description: "A revolutionary parody startup",
       link: "https://marsgo.xyz/",
       icon: "🪐",
@@ -56,12 +87,7 @@ const Projects = () => {
       link: "https://busy-beaverz.vercel.app",
       icon: "🦫",
     },
-    {
-      title: "WutFloor",
-      description: "An NFT portfolio analyzer.",
-      link: "https://wutfloor.xyz",
-      icon: "📊",
-    },
+
     {
       title: "Hoot",
       description: "A fully on-chain collection of CC0 MoonBirds.",
@@ -103,10 +129,15 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12"
+            className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 flex justify-center flex-row flex-wrap  py-8  md:space-x-12"
           >
             <Fade>
-              <a href={project.link} target="_blank" rel="noreferrer">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full"
+              >
                 <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96 min-w">
                   <h2 className="text-white text-center font-bold md:text-2xl text-lg">
                     {project.icon}
