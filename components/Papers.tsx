@@ -11,14 +11,14 @@ const Papers = () => {
         </div>
       </Zoom>
       <div className="flex flex-row flex-wrap justify-center p-16">
-        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
+        <div className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/2 cursor-pointer flex justify-center flex-row flex-wrap  py-8  md:space-x-12">
           <Fade>
             <a
               href="https://link.springer.com/chapter/10.1007/978-3-662-63958-0_43"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110  w-96">
+              <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-105">
                 <img src="/img/springer.jpg" className="w-32 m-auto mt-6" />
 
                 <h2 className="text-white text-center font-bold text-xl p-6">
