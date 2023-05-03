@@ -40,7 +40,7 @@ export default function Home() {
           {loading ? (
             <span className="loader"></span>
           ) : (
-            <div className="w-full flex-col justify-center fade-in ">
+            <div className="w-full flex-col justify-center fade-in">
               <BackgroundMagic />
               <div className="overview-left">
                 <Fade delay={500}>
@@ -48,7 +48,7 @@ export default function Home() {
                     href="https://github.com/rarepepi"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i className="fa fa-github text-xl mr-2 mb-6" />
                   </a>
@@ -56,7 +56,7 @@ export default function Home() {
                     href="https://twitter.com/rarepepi"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i
                       className="fa fa-twitter text-xl mr-2 mb-6"
@@ -68,12 +68,12 @@ export default function Home() {
                     href="https://www.linkedin.com/in/pepimartinez/"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i className="fa fa-linkedin text-xl mr-2 mb-12" />
                   </a>
                   <svg
-                    className="ml-2.5"
+                    className="ml-2.5 w-8"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
