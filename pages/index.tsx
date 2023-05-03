@@ -29,12 +29,16 @@ export default function Home() {
     <>
       <Head>
         <title>Pepi Codes</title>
-        <meta name="description" content="Pepi's Personal Website" />
+        <meta
+          name="description"
+          content="Pepi's personal site displaying: projects, papers, and more."
+        />
       </Head>
       <main>
         <div className="flex justify-center flex-col">
-          {loading && <span className="loader"></span>}
-          {!loading && (
+          {loading ? (
+            <span className="loader"></span>
+          ) : (
             <div className="w-full flex-col justify-center ">
               <BackgroundMagic />
               <div className="overview-left">
@@ -46,7 +50,7 @@ export default function Home() {
                     className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i
-                      className="fa fa-twitter text-xl mr-2"
+                      className="fa fa-twitter text-xl mr-2 mb-6"
                       aria-hidden="true"
                     />
                   </a>
@@ -56,7 +60,7 @@ export default function Home() {
                     rel="noreferrer"
                     className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    <i className="fa fa-github text-xl mr-2" />
+                    <i className="fa fa-github text-xl mr-2 mb-6" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/pepimartinez/"
@@ -71,60 +75,48 @@ export default function Home() {
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
-                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="2" />
                   </svg>
                 </Fade>
               </div>
-              <div className="overview-right">
+              <div className="overview-right ">
                 <Fade delay={500}>
-                  <li
-                    className="hover:cursor-copy"
-                    onClick={(e) => {
-                      navigator.clipboard.writeText(
-                        "pepimartinez@protonmail.com"
-                      );
-                    }}
+                  <a
+                    className="hover:text-green-300"
+                    href="mailto:pepimartinez@protonmail.com"
                   >
                     pepimartinez@protonmail.com
-                  </li>
+                  </a>
                   <svg
                     className="ml-2.5"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
-                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="5" />
+                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="2" />
                   </svg>
                 </Fade>
               </div>
-              <Fade>
-                <Head>
-                  <title>Pepi Codes</title>
-                  <meta
-                    name="description"
-                    content="Pepi's personal site displaying: projects, papers, and more."
-                  />
-                </Head>
-                <div className="w-full">
-                  <div className="">
-                    <TopNav />
-                  </div>
-                  <section className="p-8 ">
-                    <MainContent />
-                  </section>
-                  <section className="mb-32  p-8">
-                    <About />
-                  </section>
-                  <section className="mb-32 p-8 overflow-hidden">
-                    <Projects />
-                  </section>
-                  <section className="mb-32 p-8 overflow-hidden">
-                    <Papers />
-                  </section>
+
+              <div className="w-full">
+                <div className="">
+                  <TopNav />
                 </div>
-                <section className="mt-16 w-full">
-                  <Footer />
+                <section className="p-8 ">
+                  <MainContent />
                 </section>
-              </Fade>
+                <section className="mb-32  p-8">
+                  <About />
+                </section>
+                <section className="mb-32 p-8 overflow-hidden">
+                  <Projects />
+                </section>
+                <section className="mb-32 p-8 overflow-hidden">
+                  <Papers />
+                </section>
+              </div>
+              <section className="mt-16 w-full">
+                <Footer />
+              </section>
             </div>
           )}
           <style jsx>
@@ -147,7 +139,7 @@ export default function Home() {
                 z-index: 5;
               }
 
-              .overview-right li {
+              .overview-right a {
                 writing-mode: vertical-rl;
                 color: white;
                 width: 80px;
