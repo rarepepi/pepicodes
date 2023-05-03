@@ -48,7 +48,7 @@ export default function Home() {
                     href="https://github.com/rarepepi"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-400 hover:bg-gray-700 cursor-pointer	 w-8 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i className="fa fa-github text-xl mr-2 mb-6" />
                   </a>
@@ -56,7 +56,7 @@ export default function Home() {
                     href="https://twitter.com/rarepepi"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-400 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i
                       className="fa fa-twitter text-xl mr-2 mb-6"
@@ -68,7 +68,7 @@ export default function Home() {
                     href="https://www.linkedin.com/in/pepimartinez/"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-gray-200 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-400 hover:bg-gray-700 cursor-pointer w-8	 hover:text-green-300 px-3 py-2 rounded-md text-sm font-medium"
                   >
                     <i className="fa fa-linkedin text-xl mr-2 mb-12" />
                   </a>
@@ -77,14 +77,14 @@ export default function Home() {
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
-                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="2" />
+                    <path d="M 10,10 V 200" stroke="#9CA3AF" stroke-width="2" />
                   </svg>
                 </Fade>
               </div>
               <div className="overview-right ">
                 <Fade delay={500}>
                   <a
-                    className="hover:text-green-300"
+                    className="hover:text-green-300 text-gray-400"
                     href="mailto:pepimartinez@protonmail.com"
                   >
                     pepimartinez@protonmail.com
@@ -94,7 +94,7 @@ export default function Home() {
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                   >
-                    <path d="M 10,10 V 200" stroke="#fff" stroke-width="2" />
+                    <path d="M 10,10 V 200" stroke="#9CA3AF" stroke-width="2" />
                   </svg>
                 </Fade>
               </div>
