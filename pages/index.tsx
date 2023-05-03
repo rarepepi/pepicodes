@@ -12,6 +12,7 @@ import About from "../components/About";
 function sleep(ms: any) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -107,7 +108,7 @@ export default function Home() {
                   <div className="">
                     <TopNav />
                   </div>
-                  <section className="-mt-6 p-8 ">
+                  <section className="p-8 ">
                     <MainContent />
                   </section>
                   <section className="mb-32  p-8">
