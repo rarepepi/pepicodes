@@ -7,7 +7,7 @@ const MainContent = () => {
         <Fade delay={250} triggerOnce>
           <p className="text-green-300 text-lg">Hi, my name is</p>
           <h1 className="xl:text-6xl text-5xl font-bold text-gray-200 mt-8">
-            Pepi
+            Pepi Martinez
           </h1>
 
           <h2 className="text-gray-400 xl:text-6xl text-5xl mt-4 font-bold">
