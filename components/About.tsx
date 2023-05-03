@@ -11,11 +11,11 @@ const About = () => {
                 <span className="text-green-300 ">01. </span> About Me
               </h1>
             </Zoom>
-            <Fade>
+            <Fade cascade>
               <img
                 src="/img/logo.png"
                 className="max-w-xl hover:animate-pulse ring-8 xs:ml-44 m-auto flex md:w-72 w-36 justify-center ring-green-300"
-              ></img>
+              />
 
               <h2 className=" m-auto   md:text-center text-gray-300 my-12">
                 Ever since I got my first computer at the age of 5, I&apos;ve
