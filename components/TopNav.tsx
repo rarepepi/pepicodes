@@ -107,17 +107,17 @@ function TopNav() {
               <div className="md:hidden" id="mobile-menu">
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   <Link to="ABOUT" smooth="true" offset={-50}>
-                    <a className="text-green-300   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                    <a className="text-gray-400 font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-green-300 px-3 py-2 rounded-md">
                       About
                     </a>
                   </Link>
                   <Link to="PROJECTS" smooth="true" offset={-50}>
-                    <a className="text-green-300   font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                    <a className="text-gray-400 font-bold flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-green-300 px-3 py-2 rounded-md">
                       Projects
                     </a>
                   </Link>
                   <Link to="PAPERS" smooth="true" offset={-50}>
-                    <a className="text-green-300  font-bold  flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-white px-3 py-2 rounded-md">
+                    <a className="text-gray-400font-bold  flex justify-center hover:bg-gray-700 cursor-pointer	 hover:text-green-300 px-3 py-2 rounded-md">
                       Papers
                     </a>
                   </Link>
