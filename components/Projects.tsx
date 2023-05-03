@@ -131,7 +131,7 @@ const Projects = () => {
             key={project.title}
             className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 flex justify-center flex-row flex-wrap  py-8  md:space-x-12"
           >
-            <Fade delay={i * 100}>
+            <Fade delay={300}>
               <a
                 href={project.link}
                 target="_blank"
