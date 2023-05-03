@@ -111,7 +111,7 @@ const BackgroundMagic = () => {
             speed: 5,
           },
           number: {
-            value: 200,
+            value: 100,
           },
           opacity: {
             animation: {
