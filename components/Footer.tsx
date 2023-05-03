@@ -11,7 +11,18 @@ const Footer = () => {
     >
       <Fade>
         <div className="flex justify-start ">
-          <p className="text-gray-400 text-sm">Built by Pepi.</p>
+          <p className="text-gray-400 text-sm">
+            Built from scratch by Pepi.{" "}
+            <span>
+              <a
+                href="https://github.com/rarepepi/pepicodes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa fa-github text-xl ml-2 mb-6" />
+              </a>
+            </span>
+          </p>
         </div>
       </Fade>
     </div>
