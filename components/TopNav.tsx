@@ -8,7 +8,7 @@ function TopNav() {
 
   return (
     <div className="p-4">
-      <Fade delay={750}>
+      <Fade>
         <nav className="">
           <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
