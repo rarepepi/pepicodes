@@ -78,13 +78,13 @@ const Projects = () => {
     {
       title: "Alpha Explorers",
       description: "The most powerful tools in web3 all at your fingertips.",
-      link: "https://alpha-explorer.vercel.app",
+      link: "https://alphaexplorer.xyz/",
       icon: "✨",
     },
     {
       title: "Building Beaverz",
       description: "A team based NFT game.",
-      link: "https://busy-beaverz.vercel.app",
+      link: "https://buildingbeaverz.com/",
       icon: "🦫",
     },
 
