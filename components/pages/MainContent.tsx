@@ -74,8 +74,8 @@ const MainContent = () => {
         </div>
         <p className="dark:text-zinc-300 text-zinc-700  my-8">
           Crafting solutions and bringing innovative ideas to life in the
-          decentralized world – that's where my fire burns brightest. Dive into
-          my full list of
+          decentralized world – that&apos;s where my fire burns brightest. Dive
+          into my full list of
           <Link
             href="/projects"
             className="dark:text-white underline hover:decoration-zinc-400 decoration-zinc-600 underline-offset-8"
@@ -83,11 +83,11 @@ const MainContent = () => {
             {" "}
             projects{" "}
           </Link>
-          to see what I've been up to.
+          to see what I&apos;ve been up to.
         </p>
         <p className="dark:text-zinc-300 text-zinc-700 mb-10">
-          When I'm not developing, my time is spent on generative art, exploring
-          digital frontiers, and creating interactive experiments.
+          When I&apos;m not developing, my time is spent on generative art,
+          exploring digital frontiers, and creating interactive experiments.
         </p>
         <a
           className="w-32 text-center p-3 motion-safe:hover:scale-110 dark:hover:text-white dark:text-zinc-300 text-zinc-700 ring-zinc-300 ring-2 "
