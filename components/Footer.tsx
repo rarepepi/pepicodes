@@ -1,7 +1,7 @@
-// @ts-ignore:next-line
+"use client";
 
-import { Fade } from "react-awesome-reveal";
-
+import { HeartIcon } from "@radix-ui/react-icons";
+import { BiSolidHeart } from "react-icons/bi";
 const Footer = () => {
   return (
     <div
@@ -9,22 +9,21 @@ const Footer = () => {
     inset-x-0
     bottom-0"
     >
-      <Fade>
-        <div className="flex justify-start ">
-          <p className="text-gray-400 text-sm">
-            Built from scratch by Pepi.{" "}
-            <span>
-              <a
-                href="https://github.com/rarepepi/pepicodes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="fa fa-github text-xl ml-2 mb-6" />
-              </a>
-            </span>
-          </p>
-        </div>
-      </Fade>
+      <div className="flex justify-start ">
+        <p className="text-gray-400 text-sm">
+          Built from scratch with <BiSolidHeart className="inline mb-1 mx-1" />{" "}
+          by Pepi
+          <span>
+            <a
+              href="https://github.com/rarepepi/pepicodes"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa fa-github text-xl ml-2 mb-6" />
+            </a>
+          </span>
+        </p>
+      </div>
     </div>
   );
 };

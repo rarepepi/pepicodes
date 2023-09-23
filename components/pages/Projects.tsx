@@ -1,4 +1,4 @@
-import { Zoom, Fade } from "react-awesome-reveal";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const Projects = () => {
   const projects = [
@@ -116,45 +116,38 @@ const Projects = () => {
   ];
 
   return (
-    <div id="PROJECTS">
-      <Zoom>
-        <div>
-          <h2 className="text-gray-300 md:text-2xl text-lg text-center font-bold">
-            <span className="text-green-300 mr-4">02.</span>Some Things
-            I&apos;ve Built
-          </h2>
-        </div>
-      </Zoom>
-      <div className="flex flex-row flex-wrap justify-center md:p-16 ">
+    <div className="max-w-4xl p-8">
+      <div>
+        <h2 className="text-3xl text-center font-bold">Projects</h2>
+      </div>
+
+      <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 p-8">
         {projects.map((project, i) => (
           <div
             key={project.title}
-            className="bg-bg-light m-4 text-center hover:ring-2 hover:ring-green-300 md:w-1/3 flex justify-center flex-row flex-wrap  py-8  md:space-x-12"
+            className="dark:bg-zinc-900 bg-zinc-100 text-zinc-900 dark:hover:bg-zinc-800 p-5 rounded-2xl text-center hover:ring-2 hover:ring-zinc-300 flex justify-center flex-row flex-wrap"
           >
-            <Fade delay={300}>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noreferrer"
-                className="w-full"
-              >
-                <div className="text-white flex flex-col justify-center rounded-lg p-4 motion-safe:hover:scale-110 max-w-lg w-96 min-w">
-                  <h2 className="text-white text-center font-bold md:text-2xl text-lg">
-                    {project.icon}
-                  </h2>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="w-full"
+            >
+              <div className="dark:text-white text-zinc-900 flex flex-col justify-center rounded-lg motion-safe:hover:scale-110 max-w-lg min-w">
+                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl text-lg">
+                  {project.icon}
+                </h2>
 
-                  <h2 className="text-white text-center font-bold md:text-2xl text-lg mt-6">
-                    {project.title}
-                  </h2>
+                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl text-lg mt-6">
+                  {project.title}
+                </h2>
 
-                  <p className="p-8 w-max-lg">{project.description}</p>
-                </div>
-              </a>
-            </Fade>
+                <p className="p-8 w-max-lg">{project.description}</p>
+              </div>
+            </a>
           </div>
         ))}
       </div>
-      <style jsx>{``}</style>
     </div>
   );
 };

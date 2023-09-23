@@ -1,11 +1,23 @@
-import React from "react";
+"use client";
+
 import Particles from "react-tsparticles";
 
+import { loadFull } from "tsparticles";
+
 const BackgroundMagic = () => {
+  const particlesInit = async (main: any) => {
+    console.log(main);
+
+    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(main);
+  };
   return (
     <Particles
-      className="absolute -z-10 w-full h-full"
+      className=""
       id="tsparticles"
+      init={particlesInit}
       options={{
         background: {
           color: {

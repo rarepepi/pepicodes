@@ -51,10 +51,6 @@
   }
 }
 
-body:not(.loaded) .fade-in {
-  opacity: 0;
-}
-
 .fade-in {
   animation: fadeIn 1s ease-in-out forwards;
 }
