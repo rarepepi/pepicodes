@@ -7,7 +7,7 @@ import BackgroundMagic from "@/components/BackgroundMagic";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Pepi Codes",
   description: "Pepi Martinez - Software Engineer",
 };
 
