@@ -48,12 +48,13 @@ export const Nav = () => {
             >
               About
             </AnimatedLink>
-            <AnimatedLink
+            <Link
               className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md text-lg  font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
-              href="/writing"
+              href="https://rarepepi.substack.com/"
+              target="_blank"
             >
               Writing
-            </AnimatedLink>
+            </Link>
           </div>
 
           <div className="sm:hidden">
@@ -70,12 +71,13 @@ export const Nav = () => {
             >
               About
             </AnimatedLink>
-            <AnimatedLink
+            <Link
               className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md text-md font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
-              href="/writing"
+              href="https://rarepepi.substack.com/"
+              target="_blank"
             >
               Writing
-            </AnimatedLink>
+            </Link>
           </div>
           <div className="flex justify-center sm:items-stretch sm:justify-start">
             <div className="">

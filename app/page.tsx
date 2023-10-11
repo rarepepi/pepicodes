@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     async function addBodyClass() {
-      await sleep(2000);
+      await sleep(1000);
       document.body.classList.add("loaded");
       setLoading(false);
     }
