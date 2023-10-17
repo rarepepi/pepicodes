@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Pepi Codes",
-  description: "Pepi Martinez - Software Engineer",
+  description: "Pepi Martinez - Software Engineer - Builder",
 };
 
 export default function RootLayout({
