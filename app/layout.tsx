@@ -19,6 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="">
       <head>
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "4e7d79b944524a3980df696e96f933a6"}'
+        ></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
