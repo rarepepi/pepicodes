@@ -2,25 +2,21 @@ import Link from "next/link";
 
 const MainContent = () => {
   return (
-    <div className="max-w-6xl fade-in">
-      <div className="flex text-lg flex-col justify-left p-8 md:p-16 md:px-64">
-        <h1 className="text-4xl font-bold mt-8 mb-8">Pepi Martinez</h1>
-        <h2 className="dark:text-zinc-300">
-          Hey, I am Pepi Martinez, a fanatical builder.
-        </h2>
-
+    <div className="max-w-4xl fade-in flex justify-center items-center p-10">
+      <div className="flex  flex-col justify-left p-8 md:p-16 md:px-64">
+        <h1 className="dark:text-zinc-300">Hi, I am Pepi Martinez.</h1>
+        <h2 className="dark:text-zinc-300">I write code and make websites.</h2>
+        <h3 className="dark:text-zinc-300">
+          I'm obsessed with using cryptography for better finance.
+        </h3>
         <div className="mt-6 space-y-2">
           <h3 className="dark:text-zinc-300">
-            Working at{" "}
+            Building at{" "}
             <Link
               className="dark:text-white underline hover:decoration-zinc-400 decoration-zinc-600 underline-offset-8"
               href="https://noramp.io/"
               target="_blank"
             >
-              <img
-                className="w-6 inline mx-2 rounded-full"
-                src="/img/noramp.png"
-              />
               NoRamp
             </Link>
           </h3>
@@ -31,10 +27,6 @@ const MainContent = () => {
               href="https://www.blockchains.com/"
               target="_blank"
             >
-              <img
-                className="w-6 inline mx-2 rounded-full"
-                src="/img/blockchains.jpeg"
-              />
               Blockchains
             </Link>
             <Link
@@ -42,10 +34,6 @@ const MainContent = () => {
               href="https://www.insomnialabs.io/"
               target="_blank"
             >
-              <img
-                className="w-6 inline mx-2 rounded-full"
-                src="/img/insomnia.jpeg"
-              />
               Insomnia
             </Link>
             <Link
@@ -53,10 +41,6 @@ const MainContent = () => {
               href="https://www.ey.com/"
               target="_blank"
             >
-              <img
-                className="w-6 inline mx-2 rounded-full"
-                src="/img/ey.jpeg"
-              />
               EY
             </Link>
             <Link
@@ -64,39 +48,31 @@ const MainContent = () => {
               href="https://www.nyu.edu/"
               target="_blank"
             >
-              <img
-                className="w-6 inline mx-2 rounded-full"
-                src="/img/nyu.jpg"
-              />
               NYU
             </Link>
           </p>
+          <p className="dark:text-zinc-300 space-x-2">
+            CS at{" "}
+            <Link
+              className="dark:text-white underline hover:decoration-zinc-400 decoration-zinc-600 underline-offset-8"
+              href="https://www.nyu.edu/"
+              target="_blank"
+            >
+              NYU 2022
+            </Link>
+          </p>
         </div>
-        <p className="dark:text-zinc-300 text-zinc-700  my-8">
-          Crafting solutions and bringing innovative ideas to life in the
-          decentralized world – that&apos;s where my fire burns brightest. Dive
-          into my full list of
+
+        <div className="py-3">
+          Sometimes I write
           <Link
-            href="/projects"
+            href="https://rarepepi.substack.com/"
             className="dark:text-white underline hover:decoration-zinc-400 decoration-zinc-600 underline-offset-8"
           >
             {" "}
-            projects{" "}
+            here
           </Link>
-          to see what I&apos;ve been up to.
-        </p>
-        <p className="dark:text-zinc-300 text-zinc-700 mb-10">
-          When I&apos;m not developing, my time is spent on generative art,
-          exploring digital frontiers, and creating interactive experiments.
-        </p>
-        <a
-          className="w-32 text-center p-3 motion-safe:hover:scale-110 dark:hover:text-white dark:text-zinc-300 text-zinc-700 ring-zinc-300 ring-2 "
-          href="https://pepi.codes/resume.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Resume
-        </a>
+        </div>
       </div>
     </div>
   );

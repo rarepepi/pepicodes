@@ -36,20 +36,20 @@ export const Nav = () => {
           </div>
           <div className="sm:flex hidden">
             <AnimatedLink
-              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md text-lg font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
+              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md  font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
               href="/projects"
             >
               Projects
             </AnimatedLink>
 
             <AnimatedLink
-              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md text-lg  font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
+              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md   font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
               href="/about"
             >
               About
             </AnimatedLink>
             <Link
-              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md text-lg  font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
+              className="px-3 py-3.5 dark:text-zinc-400 dark:hover:text-zinc-100 rounded-md   font-bold focus:outline-none hover:bg-primary-color hover:text-secondary-color"
               href="https://rarepepi.substack.com/"
               target="_blank"
             >

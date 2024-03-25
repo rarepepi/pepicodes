@@ -134,11 +134,11 @@ const Projects = () => {
               className="w-full"
             >
               <div className="dark:text-white text-zinc-900 flex flex-col justify-center rounded-lg motion-safe:hover:scale-110 max-w-lg min-w">
-                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl text-lg">
+                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl ">
                   {project.icon}
                 </h2>
 
-                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl text-lg mt-6">
+                <h2 className="dark:text-white text-zinc-900 text-center font-bold md:text-2xl  mt-6">
                   {project.title}
                 </h2>
 

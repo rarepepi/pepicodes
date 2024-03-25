@@ -42,10 +42,10 @@ export default function RootLayout({
           data-website-id="1ac4cbc1-7b53-4517-b1fb-1ceaaeafe5ab"
         ></script>
       </head>
-      <body className="min-h-screen">
-        <BackgroundMagic />
+      <body className="flex flex-col justify-center items-center bg-[#111111]">
+        {/* <BackgroundMagic /> */}
 
-        <div className="overview-left">
+        {/* <div className="overview-left">
           <a
             href="https://github.com/rarepepi"
             target="_blank"
@@ -96,13 +96,13 @@ export default function RootLayout({
           >
             <path d="M 10,10 V 200" stroke="#5C5C62" strokeWidth="2" />
           </svg>
-        </div>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Nav />
+        </div> */}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {/* <Nav /> */}
           {children}
-          <div className="sticky top-[100vh]">
+          {/* <div className="sticky">
             <Footer />
-          </div>
+          </div> */}
         </ThemeProvider>
         <script
           defer

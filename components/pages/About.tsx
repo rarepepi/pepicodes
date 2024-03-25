@@ -48,7 +48,7 @@ const About = () => {
               </span>
               <br />
             </h2>
-            <span className="dark:text-zinc-300 text-lg mb-4 font-bold">
+            <span className="dark:text-zinc-300  mb-4 font-bold">
               My few of favorite technologies include:
             </span>
             <ul className="skills dark:text-zinc-300 text-zinc-800 text-xl font-bold space-y-4">
