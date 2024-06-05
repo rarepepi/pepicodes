@@ -1,5 +1,8 @@
 "use client";
 import {
+  SiDocker,
+  SiGo,
+  SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
   SiPostgresql,
@@ -31,12 +34,11 @@ const About = () => {
                 {" "}
                 full-stack software engineer
               </span>{" "}
-              with{" "}
-              <span className="font-bold">
-                6 years of experience in creating web applications and 3 years
-                of expertise{" "}
-              </span>
-              in building decentralized applications (DApps).
+              with <span className="font-bold">8 years </span>
+              of experience in creating{" "}
+              <span className="font-bold">web applications</span> and{" "}
+              <span className="font-bold">5 years</span> of expertise in
+              building <span className="font-bold">on-chain applications.</span>
               <br />
               <img
                 className="w-16 m-auto mt-4 rounded-full"
@@ -69,6 +71,24 @@ const About = () => {
                   <SiNextdotjs className=" w-12 inline" />
                 </span>
                 Next.js
+              </li>
+              <li>
+                <span className="">
+                  <SiNestjs className=" w-12 inline" />
+                </span>
+                Nest.js
+              </li>
+              <li>
+                <span className="">
+                  <SiGo className=" w-12 inline" />
+                </span>
+                Go
+              </li>
+              <li>
+                <span className="">
+                  <SiDocker className=" w-12 inline" />
+                </span>
+                Docker
               </li>
               <li>
                 <span className="">
