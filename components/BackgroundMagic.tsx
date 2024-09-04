@@ -153,43 +153,6 @@ const BackgroundMagic = () => {
             height: 0,
             width: 0,
           },
-          particles: {
-            shape: {
-              type: "images",
-              options: {
-                images: {
-                  src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Moebius_strip.svg/712px-Moebius_strip.svg.png",
-                  width: 500,
-                  height: 634,
-                },
-              },
-            },
-            size: {
-              value: 40,
-            },
-            move: {
-              speed: 10,
-              outModes: {
-                default: "none",
-                right: "destroy",
-              },
-              straight: true,
-            },
-            zIndex: {
-              value: 0,
-            },
-            rotate: {
-              value: {
-                min: 0,
-                max: 360,
-              },
-              animation: {
-                enable: true,
-                speed: 10,
-                sync: true,
-              },
-            },
-          },
           position: {
             x: -5,
             y: 55,
