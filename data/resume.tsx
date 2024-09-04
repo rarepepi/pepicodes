@@ -1,6 +1,6 @@
 import { Icons } from "../components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { IoLogoGithub, IoMdGlobe } from "react-icons/io";
+import { IoLogoGithub, IoMdGlobe, IoIosAppstore } from "react-icons/io";
 
 export const DATA = {
   name: "Pepi Martinez",
@@ -121,6 +121,29 @@ export const DATA = {
   ],
 
   projects: [
+    {
+      title: "Journal.",
+      href: "https://journal.fm",
+      dates: "Oct 2023 - Aug 2024",
+      active: true,
+      description: "The world’s social journal.",
+      technologies: [
+        "Typescript",
+        "Node.js",
+        "Nest.js",
+        "React Native",
+        "MySQL",
+      ],
+      links: [
+        {
+          type: "iOS App",
+          href: "https://apps.apple.com/us/app/journal-be-real-with-words/id6469975300",
+          icon: <IoIosAppstore size={16} />,
+        },
+      ],
+      image: "/projects/journal.png",
+      video: "",
+    },
     {
       title: "Summify.ai",
       href: "https://summify.ai",
