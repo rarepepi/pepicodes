@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Curious hacker turned Software Engineer. I love building things and exploring the edge of what is possible.",
   summary:
-    "At 5, I connected to dial-up internet and became fascinated with computers. By 9, I built my first computer to play video games. At 13, I started writing malware, finding joy in outsmarting antivirus software. At 15, I shifted my focus to full stack web apps. By, 16 I bought my first Bitcoin, discovering a passion for decentrailized permissionless networks and I haven't looked back since.",
+    "At 5, I connected to dial-up internet and became fascinated with computers. By 9, I built my first computer to play video games. At 13, I started writing malware, finding joy in outsmarting antivirus software. At 15, I shifted my focus to full stack web apps. By, 16 I bought my first Bitcoin, discovering a passion for decentralized permissionless networks and I haven't looked back since.",
   avatarUrl: "/me.jpeg",
   skills: [
     "Typescript",
