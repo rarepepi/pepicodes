@@ -1,5 +1,6 @@
 import { Icons } from "../components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { IoLogoGithub, IoMdGlobe } from "react-icons/io";
 
 export const DATA = {
   name: "Pepi Martinez",
@@ -131,7 +132,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/summify-ai/summify-discord",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoLogoGithub size={16} />,
         },
       ],
       image: "/projects/summify.png",
@@ -148,7 +149,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://blockery.app",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "/projects/blockery.png",
@@ -165,7 +166,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://genarts.ai",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "",
@@ -182,7 +183,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://wutfloor.xyz",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "/projects/wutfloor.png",
@@ -199,7 +200,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://biorxiv.ai",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "/projects/biorxiv.png",
@@ -216,7 +217,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://language.help",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "/projects/langugagehelp.png",
@@ -240,7 +241,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/rarepepi/artgobblers-discord-bot",
-          // icon: <Icons.github className="size-3" />,
+          icon: <IoLogoGithub size={16} />,
         },
       ],
       image: "/projects/artgobblers.png",
@@ -257,7 +258,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://colorsonchain.com",
-          // icon: <Icons.globe className="size-3" />,
+          icon: <IoMdGlobe size={16} />,
         },
       ],
       image: "/projects/colorsonchain.png",
@@ -275,7 +276,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/rarepepi/alfred",
-          // icon: <Icons.github className="size-3" />,
+          icon: <IoLogoGithub size={16} />,
         },
       ],
       image: "/projects/alfred.png",
