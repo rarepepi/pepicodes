@@ -164,7 +164,7 @@ export const DATA = {
     {
       title: "Blockery",
       href: "https://blockery.app",
-      dates: "Jul 2022 - Mar 2024",
+      dates: "Jul 2022 - Mar 2023",
       active: true,
       description: "Your new home for NFT analytics and knowledge.",
       technologies: ["Typescript", "Node.js", "Nest.js", "PostgreSQL"],
