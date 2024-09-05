@@ -147,9 +147,7 @@ export default function Page() {
                   Check out my work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve built everything from straightforward websites to
-                  complex web applications. Here are a few of my favorite
-                  projects.
+From AI tools to blockchain solutions, I&apos;ve worked on everything from simple sites to advanced full-stack apps, APIs, and even an iOS app. Here are a few I&apos;m proud of.
                 </p>
               </div>
             </div>
