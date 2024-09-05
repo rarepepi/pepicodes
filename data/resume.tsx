@@ -115,11 +115,20 @@ export const DATA = {
       href: "https://nyu.edu",
       degree: "Computer Science",
       logoUrl: "/nyu.jpg",
-      start: "2018",
-      end: "2022",
+      start: "May 2018",
+      end: "May 2022",
     },
   ],
-
+  publication: [
+    {
+      title: "Coins, Covid, Keynes and K-Shaped Recovery",
+      href: "https://link.springer.com/chapter/10.1007/978-3-662-63958-0_43",
+      topics:
+        "Springer, Berlin, Heidelberg - Financial Cryptography and Data Security",
+      logoUrl: "/springer.png",
+      date: "Sep 2021",
+    },
+  ],
   projects: [
     {
       title: "Journal.",
