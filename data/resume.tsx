@@ -115,7 +115,7 @@ export const DATA = {
       href: "https://nyu.edu",
       degree: "Computer Science",
       logoUrl: "/nyu.jpg",
-      start: "May 2018",
+      start: "Aug 2018",
       end: "May 2022",
     },
   ],
