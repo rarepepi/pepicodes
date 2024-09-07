@@ -8,7 +8,7 @@ import { Badge } from "../components/ui/badge";
 import { DATA } from "../data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import OrbitingCircles from "@/components/magicui/orbiting-circles";
+// import OrbitingCircles from "@/components/magicui/orbiting-circles";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -167,17 +167,13 @@ export default function Page() {
                 key={blog.slug}
               >
                 <Link
-                  className="flex flex-col space-y-1 mb-4"
+                  className="flex flex-col space-y-1"
                   href={`/blog/${blog.slug}`}
                 >
                   <div className="w-full flex flex-col">
-                    <p className=" text-lg text-muted-foreground">
-                      {blog.publishedAt}
-                    </p>
+                    <p className="font-semibold text-lg">{blog.publishedAt}</p>
                     <p className="tracking-tight text-lg">{blog.title}</p>
-                    <p className="py-2 text-sm text-muted-foreground">
-                      {blog.summary}
-                    </p>
+                    <p className="py-2 text-sm">{blog.summary}</p>
                   </div>
                 </Link>
               </BlurFade>
@@ -242,10 +238,31 @@ export default function Page() {
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-400 hover:underline"
+                  aria-label="X Profile Link"
                 >
                   X
                 </Link>{" "}
                 .
+              </p>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div className="grid items-center justify-center gap-4 text-center px-6 w-full">
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
+            <div className="space-y-3">
+              <p className="flex mx-auto gap-2 max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <Link
+                  href={`https://github.com/rarepepi/pepicodes`}
+                  className="text-blue-400 hover:underline"
+                  aria-label="Source Code for this Site Link"
+                  target="_blank"
+                >
+                  Source code
+                </Link>{" "}
+                for this portfolio.
               </p>
             </div>
           </BlurFade>
