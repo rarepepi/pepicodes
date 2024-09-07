@@ -208,8 +208,8 @@ export const DATA = {
           icon: <IoMdGlobe size={16} />,
         },
       ],
-      image: "",
-      video: "/projects/genarts.mp4",
+      image: "/projects/genarts.png",
+      video: "",
     },
     {
       title: "WutFloor",
