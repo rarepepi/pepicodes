@@ -6,7 +6,6 @@ import {
   SiEthereum,
   SiPostgresql,
   SiReact,
-  SiRedis,
   SiSolidity,
 } from "react-icons/si";
 import {
@@ -15,7 +14,6 @@ import {
   TbBrandNextjs,
   TbBrandNodejs,
   TbBrandPython,
-  TbBrandReactNative,
   TbBrandTailwind,
   TbBrandTypescript,
 } from "react-icons/tb";
