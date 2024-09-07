@@ -21,7 +21,7 @@ export default async function BlogPage() {
         </Link>
       </div>
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter">Blog</h1>
       </BlurFade>
       {posts
         .sort((a, b) => {

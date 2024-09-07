@@ -151,5 +151,5 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   right: 0;
   padding: 0;
   margin: 0;
-  z-index: 0; /* if you use -1 you have to set to `"window"` the interactivity.detectsOn property */
+  z-index: -1;
 }
