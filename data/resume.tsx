@@ -44,7 +44,7 @@ export const DATA = {
     { name: "PostgreSQL", icon: <SiPostgresql size={24} /> },
     { name: "Redis", icon: <DiRedis size={24} /> },
     { name: "React", icon: <SiReact size={24} /> },
-    { name: "React Native", icon: <TbBrandReactNative size={24} /> },
+    { name: "React Native", icon: null },
     { name: "Docker", icon: <SiDocker size={24} /> },
     { name: "EVM", icon: <SiEthereum size={24} /> },
     { name: "Tailwind CSS", icon: <TbBrandTailwind size={24} /> },
@@ -54,9 +54,18 @@ export const DATA = {
   ],
   blog: [
     {
+      title: "Quadratic Voting: A More Nuanced Way to Capture Preferences",
+      summary:
+        "This blog explores the concept of quadratic voting and how it addresses the limitations of traditional voting systems by capturing not just the direction, but the intensity of preferences.",
+      slug: "2024-09-07",
+      publishedAt: "Sep 7th, 2024",
+    },
+    {
       title: "The Intersection of Economics and Code: Why Crypto Fascinates Me",
-      slug: "2024-09-06",
-      publishedAt: "Sep 6th, 2024",
+      summary:
+        "This blog explores my journey into the world of economics, libertarian ideals, and decentralized networks like Bitcoin and Ethereum. I dive into how the mechanics of money and decentralized consensus algorithms shaped my passion for programming sound systems of money.",
+      slug: "2024-08-02",
+      publishedAt: "Aug 2nd, 2024",
     },
   ],
   navbar: [

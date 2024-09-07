@@ -9,12 +9,6 @@ import { DATA } from "../data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import OrbitingCircles from "@/components/magicui/orbiting-circles";
-import {
-  TbBrandGolang,
-  TbBrandNodejs,
-  TbBrandTypescript,
-} from "react-icons/tb";
-import { SiSolidity } from "react-icons/si";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -142,41 +136,47 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
-          <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+          {/* <div className="relative flex h-[300px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
             {DATA.skills
               .filter((skill) => skill.icon)
               .map((skill, i) => (
                 <OrbitingCircles
                   className={`size-[${
-                    i % 5 === 0 ? "50" : "50"
+                    i % 3 === 0 ? "30" : "50"
                   }px] border-none bg-transparent`}
                   duration={20}
-                  delay={i * 1}
-                  radius={i % 3 === 0 ? 80 : 190}
+                  delay={i * 3 + 1}
+                  radius={i % 3 === 0 ? 50 : 120}
                   reverse={i % 3 === 0 ? true : false}
                 >
                   {skill.icon}
                 </OrbitingCircles>
               ))}
-          </div>
+          </div> */}
         </div>
       </section>
       <section id="blogs">
         <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Blog</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.blog.map((blog, id) => (
-              <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={blog.slug}>
+              <BlurFade
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                key={blog.slug}
+              >
                 <Link
                   className="flex flex-col space-y-1 mb-4"
                   href={`/blog/${blog.slug}`}
                 >
                   <div className="w-full flex flex-col">
-                    <p className="tracking-tight">{blog.title}</p>
-                    <p className="h-6 text-xs text-muted-foreground">
+                    <p className=" text-lg text-muted-foreground">
                       {blog.publishedAt}
+                    </p>
+                    <p className="tracking-tight text-lg">{blog.title}</p>
+                    <p className="py-2 text-sm text-muted-foreground">
+                      {blog.summary}
                     </p>
                   </div>
                 </Link>
@@ -187,7 +187,7 @@ export default function Page() {
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -208,7 +208,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ProjectCard
                   href={project.href}
