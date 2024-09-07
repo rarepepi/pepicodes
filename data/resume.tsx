@@ -34,7 +34,7 @@ export const DATA = {
     {
       title: "The Intersection of Economics and Code: Why Crypto Fascinates Me",
       slug: "2024-09-06",
-      publishedAt: "2024-09-06",
+      publishedAt: "Sep 6th, 2024",
     },
   ],
   navbar: [
