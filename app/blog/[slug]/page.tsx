@@ -1,9 +1,15 @@
+import {
+  ArrowLeftFromLine,
+  ArrowLeftIcon,
+  ChevronLeftCircleIcon,
+} from "lucide-react";
 import { getPost } from "../../../data/blog";
 import { DATA } from "../../../data/resume";
 import { formatDate } from "../../../lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import Link from "next/link";
 
 export async function generateMetadata({
   params,
@@ -61,6 +67,11 @@ export default async function Blog({
 
   return (
     <section id="blog">
+      <div className="pb-3">
+        <Link href={"/blog"} className="" aria-label="back to blog">
+          <ArrowLeftIcon />
+        </Link>
+      </div>
       <script
         type="application/ld+json"
         suppressHydrationWarning

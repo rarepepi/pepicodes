@@ -30,6 +30,13 @@ export const DATA = {
     "Smart Contracts",
     "Tailwind CSS",
   ],
+  blog: [
+    {
+      title: "The Intersection of Economics and Code: Why Crypto Fascinates Me",
+      slug: "2024-09-06",
+      publishedAt: "2024-09-06",
+    },
+  ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },

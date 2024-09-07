@@ -1,3 +1,4 @@
+import { ArrowLeftIcon } from "lucide-react";
 import BlurFade from "../../components/magicui/blur-fade";
 import { getBlogPosts } from "../../data/blog";
 import Link from "next/link";
@@ -14,6 +15,11 @@ export default async function BlogPage() {
 
   return (
     <section>
+      <div className="pb-3">
+        <Link href={"/"} className="" aria-label="back to blog">
+          <ArrowLeftIcon />
+        </Link>
+      </div>
       <BlurFade delay={BLUR_FADE_DELAY}>
         <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
       </BlurFade>

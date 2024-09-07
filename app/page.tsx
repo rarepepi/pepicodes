@@ -135,6 +135,30 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="blogs">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 10}>
+            <h2 className="text-xl font-bold">Blog</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-1">
+            {DATA.blog.map((blog, id) => (
+              <BlurFade delay={BLUR_FADE_DELAY * 2 + id * 0.05} key={blog.slug}>
+                <Link
+                  className="flex flex-col space-y-1 mb-4"
+                  href={`/blog/${blog.slug}`}
+                >
+                  <div className="w-full flex flex-col">
+                    <p className="tracking-tight">{blog.title}</p>
+                    <p className="h-6 text-xs text-muted-foreground">
+                      {blog.publishedAt}
+                    </p>
+                  </div>
+                </Link>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -147,7 +171,9 @@ export default function Page() {
                   Check out my work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-From AI tools to blockchain solutions, I&apos;ve worked on everything from simple sites to advanced full-stack apps, APIs, and even an iOS app. Here are a few I&apos;m proud of.
+                  From AI tools to blockchain solutions, I&apos;ve worked on
+                  everything from simple sites to advanced full-stack apps,
+                  APIs, and even an iOS app. Here are a few I&apos;m proud of.
                 </p>
               </div>
             </div>
