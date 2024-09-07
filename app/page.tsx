@@ -189,7 +189,7 @@ From AI tools to blockchain solutions, I&apos;ve worked on everything from simpl
                 Got a question? Feel free to DM me on{" "}
                 <Link
                   href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
+                  className="text-blue-400 hover:underline"
                 >
                   X
                 </Link>{" "}
