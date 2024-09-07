@@ -1,6 +1,26 @@
 import { Icons } from "../components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { IoLogoGithub, IoMdGlobe, IoIosAppstore } from "react-icons/io";
+import {
+  SiDocker,
+  SiEthereum,
+  SiPostgresql,
+  SiReact,
+  SiRedis,
+  SiSolidity,
+} from "react-icons/si";
+import {
+  TbBrandGolang,
+  TbBrandMysql,
+  TbBrandNextjs,
+  TbBrandNodejs,
+  TbBrandPython,
+  TbBrandReactNative,
+  TbBrandTailwind,
+  TbBrandTypescript,
+} from "react-icons/tb";
+import { SiNestjs } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
 
 export const DATA = {
   name: "Pepi Martinez",
@@ -14,21 +34,23 @@ export const DATA = {
     "At 5, I connected to dial-up internet and became fascinated with computers. By 9, I built my first computer to play video games. At 13, I started writing malware, finding joy in outsmarting antivirus software. At 15, I shifted my focus to full stack web apps. By, 16 I bought my first Bitcoin, discovering a passion for decentralized permissionless networks and I haven't looked back since.",
   avatarUrl: "/me.jpeg",
   skills: [
-    "Typescript",
-    "Solidity",
-    "Node.js",
-    "Go",
-    "Python",
-    "Next.js",
-    "Nest.js",
-    "PostgreSQL",
-    "Redis",
-    "React",
-    "React Native",
-    "Docker",
-    "EVM",
-    "Smart Contracts",
-    "Tailwind CSS",
+    { name: "Typescript", icon: <TbBrandTypescript size={24} /> },
+    { name: "Solidity", icon: <SiSolidity size={24} /> },
+    { name: "Node.js", icon: <TbBrandNodejs size={24} /> },
+    { name: "Go", icon: <TbBrandGolang size={24} /> },
+    { name: "Python", icon: <TbBrandPython size={24} /> },
+    { name: "Next.js", icon: <TbBrandNextjs size={24} /> },
+    { name: "Nest.js", icon: <SiNestjs size={24} /> },
+    { name: "PostgreSQL", icon: <SiPostgresql size={24} /> },
+    { name: "Redis", icon: <DiRedis size={24} /> },
+    { name: "React", icon: <SiReact size={24} /> },
+    { name: "React Native", icon: <TbBrandReactNative size={24} /> },
+    { name: "Docker", icon: <SiDocker size={24} /> },
+    { name: "EVM", icon: <SiEthereum size={24} /> },
+    { name: "Tailwind CSS", icon: <TbBrandTailwind size={24} /> },
+    { name: "Smart Contracts", icon: null },
+    { name: "Economics", icon: null },
+    { name: "Governance Systems", icon: null },
   ],
   blog: [
     {

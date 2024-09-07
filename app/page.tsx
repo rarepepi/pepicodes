@@ -8,6 +8,13 @@ import { Badge } from "../components/ui/badge";
 import { DATA } from "../data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import OrbitingCircles from "@/components/magicui/orbiting-circles";
+import {
+  TbBrandGolang,
+  TbBrandNodejs,
+  TbBrandTypescript,
+} from "react-icons/tb";
+import { SiSolidity } from "react-icons/si";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -126,11 +133,31 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+            {DATA.skills.map((skill: { name: string; icon: any }, id) => (
+              <BlurFade
+                key={skill.name}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <Badge key={skill.name}>{skill.name}</Badge>
               </BlurFade>
             ))}
+          </div>
+          <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg">
+            {DATA.skills
+              .filter((skill) => skill.icon)
+              .map((skill, i) => (
+                <OrbitingCircles
+                  className={`size-[${
+                    i % 5 === 0 ? "50" : "50"
+                  }px] border-none bg-transparent`}
+                  duration={20}
+                  delay={i * 1}
+                  radius={i % 3 === 0 ? 80 : 190}
+                  reverse={i % 3 === 0 ? true : false}
+                >
+                  {skill.icon}
+                </OrbitingCircles>
+              ))}
           </div>
         </div>
       </section>
