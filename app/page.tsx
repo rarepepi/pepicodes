@@ -249,8 +249,8 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="contact">
-        <div className="grid items-center justify-center gap-4 text-center px-6 w-full">
+      <section id="source">
+        <div className="grid items-center justify-center h-40 gap-4 text-center md:px-6 px-12 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <div className="space-y-3">
               <p className="flex mx-auto gap-2 max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
