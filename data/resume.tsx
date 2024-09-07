@@ -209,23 +209,6 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Blockery",
-      href: "https://blockery.app",
-      dates: "Jul 2022 - Mar 2023",
-      active: true,
-      description: "Your new home for NFT analytics and knowledge.",
-      technologies: ["Typescript", "Node.js", "Nest.js", "PostgreSQL"],
-      links: [
-        {
-          type: "Website",
-          href: "https://blockery.app",
-          icon: <IoMdGlobe size={16} />,
-        },
-      ],
-      image: "/projects/blockery.png",
-      video: "",
-    },
-    {
       title: "GenArts",
       href: "https://genarts.ai",
       dates: "Mar 2023 - Dec 2023",
@@ -281,6 +264,23 @@ export const DATA = {
         },
       ],
       image: "/projects/biorxiv.png",
+      video: "",
+    },
+    {
+      title: "Blockery",
+      href: "https://blockery.app",
+      dates: "Jul 2022 - Mar 2023",
+      active: true,
+      description: "Your new home for NFT analytics and knowledge.",
+      technologies: ["Typescript", "Node.js", "Nest.js", "PostgreSQL"],
+      links: [
+        {
+          type: "Website",
+          href: "https://blockery.app",
+          icon: <IoMdGlobe size={16} />,
+        },
+      ],
+      image: "/projects/blockery.png",
       video: "",
     },
     {
