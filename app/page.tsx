@@ -173,7 +173,9 @@ export default function Page() {
                   <div className="w-full flex flex-col">
                     <p className="font-semibold text-lg">{blog.publishedAt}</p>
                     <p className="tracking-tight text-lg">{blog.title}</p>
-                    <p className="py-2 text-sm">{blog.summary}</p>
+                    <p className="py-2 text-sm text-muted-foreground">
+                      {blog.summary}
+                    </p>
                   </div>
                 </Link>
               </BlurFade>
