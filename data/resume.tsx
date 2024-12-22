@@ -100,6 +100,17 @@ export const DATA = {
     },
   },
   work: [
+    // {
+    //   company: "DAOS.fun",
+    //   href: "https://daos.fun",
+    //   badges: [],
+    //   location: "New York, NY",
+    //   title: "Full-Stack Engineer",
+    //   logoUrl: "/work/daos.png",
+    //   start: "Jan 2025",
+    //   end: "Present",
+    //   description: "",
+    // },
     {
       company: "NoRamp",
       href: "https://noramp.io",
@@ -107,8 +118,8 @@ export const DATA = {
       location: "New York, NY",
       title: "CTO",
       logoUrl: "/work/noramp.png",
-      start: "Dec 2022",
-      end: "Present",
+      start: "Jan 2023",
+      end: "Jan 2025",
       description: "",
     },
     {
