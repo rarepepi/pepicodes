@@ -132,7 +132,7 @@ export default function Page() {
                 key={skill.name}
                 delay={BLUR_FADE_DELAY * 10 + id * 0.05}
               >
-                <Badge key={skill.name}>{skill.name}</Badge>
+                <Badge key={skill.name} className="flex items-center gap-2">{skill.icon} {skill.name}</Badge>
               </BlurFade>
             ))}
           </div>
