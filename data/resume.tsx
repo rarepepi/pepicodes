@@ -52,6 +52,13 @@ export const DATA = {
   ],
   blog: [
     {
+      title: "Formal Verification: A Bulwark Against the Rising Tide of AI Slop",
+      summary:
+        "Exploring the critical importance of formal verification in an era dominated by AI-generated code, ensuring trust, reliability, and mathematical certainty in software systems.",
+      slug: "2024-10-29",
+      publishedAt: "Oct 29th, 2024",
+    },
+    {
       title: "Quadratic Voting: A More Nuanced Way to Capture Preferences",
       summary:
         "This blog explores the concept of quadratic voting and how it addresses the limitations of traditional voting systems by capturing not just the direction, but the intensity of preferences.",
