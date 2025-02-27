@@ -1,16 +1,16 @@
-import { Icons } from "../components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { IoLogoGithub, IoMdGlobe, IoIosAppstore } from "react-icons/io";
+import { DiRedis } from "react-icons/di";
+import { IoIosAppstore, IoLogoGithub, IoMdGlobe } from "react-icons/io";
 import {
   SiDocker,
   SiEthereum,
+  SiNestjs,
   SiPostgresql,
   SiReact,
   SiSolidity,
 } from "react-icons/si";
 import {
   TbBrandGolang,
-  TbBrandMysql,
   TbBrandNextjs,
   TbBrandNodejs,
   TbBrandPython,
@@ -19,8 +19,7 @@ import {
   TbBrandTailwind,
   TbBrandTypescript,
 } from "react-icons/tb";
-import { SiNestjs } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { Icons } from "../components/icons";
 
 export const DATA = {
   name: "Pepi Martinez",
@@ -45,14 +44,15 @@ export const DATA = {
     { name: "PostgreSQL", icon: <SiPostgresql size={24} /> },
     { name: "Redis", icon: <DiRedis size={24} /> },
     { name: "React", icon: <SiReact size={24} /> },
-    { name: "React Native", icon: <TbBrandReactNative size={24} />  },
+    { name: "React Native", icon: <TbBrandReactNative size={24} /> },
     { name: "Docker", icon: <SiDocker size={24} /> },
     { name: "EVM", icon: <SiEthereum size={24} /> },
     { name: "Tailwind CSS", icon: <TbBrandTailwind size={24} /> },
   ],
   blog: [
     {
-      title: "Formal Verification: A Bulwark Against the Rising Tide of AI Slop",
+      title:
+        "Formal Verification: A Bulwark Against the Rising Tide of AI Slop",
       summary:
         "Exploring the critical importance of formal verification in an era dominated by AI-generated code, ensuring trust, reliability, and mathematical certainty in software systems.",
       slug: "2024-10-29",
@@ -190,13 +190,7 @@ export const DATA = {
       dates: "Dec 2024 - Dec 2024",
       active: true,
       description: "Visualizing the data trenches of daos fun.",
-      technologies: [
-        "Typescript",
-        "Node.js",
-        "Remix.js",
-        "Go",
-        "PostgreSQL",
-      ],
+      technologies: ["Typescript", "Node.js", "Remix.js", "Go", "PostgreSQL"],
       links: [
         {
           type: "Website",
@@ -212,7 +206,8 @@ export const DATA = {
       href: "https://arbx.bet",
       dates: "May 2024 - Aug 2024",
       active: true,
-      description: "Introducing the next generation algorithms for arbitrage, expected value and more",
+      description:
+        "Introducing the next generation algorithms for arbitrage, expected value and more",
       technologies: [
         "Typescript",
         "Node.js",
@@ -272,7 +267,7 @@ export const DATA = {
     },
     {
       title: "GenArts",
-      href: "https://genarts.ai",
+      href: "https://genartai.vercel.app",
       dates: "Mar 2023 - Dec 2023",
       active: true,
       description: "AI generated art.",
