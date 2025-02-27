@@ -275,7 +275,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://genarts.ai",
+          href: "https://genartai.vercel.app",
           icon: <IoMdGlobe size={16} />,
         },
       ],
