@@ -112,7 +112,7 @@ export const DATA = {
       href: "https://daos.fun",
       badges: [],
       location: "New York, NY",
-      title: "Full Stack Engineer",
+      title: "Core Engineer",
       logoUrl: "/work/daos.png",
       start: "Dec 2024",
       end: "Present",
