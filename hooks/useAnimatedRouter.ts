@@ -7,7 +7,7 @@ export default function useAnimatedRouter() {
   const viewTransitionsStatus = () => {
     const extendedDocument = document as ExtendedDocument;
     let status = "Opss, Your browser doesn't support View Transitions API";
-    if (extendedDocument?.startViewTransition) {
+    if (typeof extendedDocument.startViewTransition === "function") {
       status = "Yess, Your browser support View Transitions API";
     }
     return status;

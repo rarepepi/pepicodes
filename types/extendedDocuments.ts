@@ -1,3 +1,3 @@
 export interface ExtendedDocument extends Document {
-  startViewTransition?: any;
+  startViewTransition: (callback: () => Promise<void> | void) => ViewTransition;
 }
