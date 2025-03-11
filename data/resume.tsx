@@ -4,9 +4,12 @@ import { IoIosAppstore, IoLogoGithub, IoMdGlobe } from "react-icons/io";
 import {
   SiDocker,
   SiEthereum,
+  SiExpo,
+  SiMysql,
   SiNestjs,
   SiPostgresql,
   SiReact,
+  SiSolana,
   SiSolidity,
 } from "react-icons/si";
 import {
@@ -34,19 +37,22 @@ export const DATA = {
   avatarUrl: "/me.jpeg",
   skills: [
     { name: "Typescript", icon: <TbBrandTypescript size={24} /> },
-    { name: "Solidity", icon: <SiSolidity size={24} /> },
-    { name: "Go", icon: <TbBrandGolang size={24} /> },
     { name: "Rust", icon: <TbBrandRust size={24} /> },
-    { name: "Python", icon: <TbBrandPython size={24} /> },
+    { name: "Go", icon: <TbBrandGolang size={24} /> },
     { name: "Node.js", icon: <TbBrandNodejs size={24} /> },
+    { name: "Solidity", icon: <SiSolidity size={24} /> },
+    { name: "Python", icon: <TbBrandPython size={24} /> },
     { name: "Next.js", icon: <TbBrandNextjs size={24} /> },
     { name: "Nest.js", icon: <SiNestjs size={24} /> },
+    { name: "Expo", icon: <SiExpo size={24} /> },
     { name: "PostgreSQL", icon: <SiPostgresql size={24} /> },
+    { name: "MySQL", icon: <SiMysql size={24} /> },
     { name: "Redis", icon: <DiRedis size={24} /> },
     { name: "React", icon: <SiReact size={24} /> },
     { name: "React Native", icon: <TbBrandReactNative size={24} /> },
     { name: "Docker", icon: <SiDocker size={24} /> },
     { name: "EVM", icon: <SiEthereum size={24} /> },
+    { name: "SVM", icon: <SiSolana size={24} /> },
     { name: "Tailwind CSS", icon: <TbBrandTailwind size={24} /> },
   ],
   blog: [
