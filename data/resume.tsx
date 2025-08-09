@@ -50,6 +50,7 @@ export const DATA = {
     { name: "Redis", icon: <DiRedis size={24} /> },
     { name: "React", icon: <SiReact size={24} /> },
     { name: "React Native", icon: <TbBrandReactNative size={24} /> },
+    { name: "Expo", icon: <SiExpo size={24} /> },
     { name: "Docker", icon: <SiDocker size={24} /> },
     { name: "EVM", icon: <SiEthereum size={24} /> },
     { name: "SVM", icon: <SiSolana size={24} /> },
