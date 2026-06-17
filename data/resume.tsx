@@ -115,8 +115,8 @@ export const DATA = {
   },
   work: [
     {
-      company: "daos.fun",
-      href: "https://daos.fun",
+      company: "tailwind.zone",
+      href: "https://tailwind.zone",
       badges: [],
       location: "New York, NY",
       title: "Core Engineer",
