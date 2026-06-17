@@ -192,6 +192,51 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Polymarket Bot",
+      href: "#",
+      dates: "December 2025 - December 2025",
+      active: true,
+      description: "Arbitrage bot for Polymarket crypto markets.",
+      technologies: ["Typescript", "Bun", "Polymarket API", "OpenTUI"],
+      links: [],
+      image: "/projects/polymarketbot.png",
+      video: "",
+    },
+    {
+      title: "Modality",
+      href: "https://www.modality.org/",
+      dates: "May 2024 - Present",
+      active: true,
+      description: "Modality is an open source standard for verifiable contracts providing native formal verification.",
+      technologies: ["Typescript", "Rust",],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/modality-org/modality",
+          icon: <IoLogoGithub size={16} />,
+        },
+      ],
+      image: "/projects/modality.png",
+      video: "",
+    },
+    {
+      title: "Solana Vanity Generator",
+      href: "https://www.solanavanityaddress.com/",
+      dates: "March 2025 - March 2025",
+      active: true,
+      description: "A tool for generating Solana vanity addresses.",
+      technologies: ["Typescript", "Next.js", "Python", "OpenCL"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.solanavanityaddress.com/",
+          icon: <IoMdGlobe size={16} />,
+        },
+      ],
+      image: "/projects/solanavanity.png",
+      video: "",
+    },
+    {
       title: "daos.gg",
       href: "https://daos.gg",
       dates: "Dec 2024 - Dec 2024",
