@@ -5,6 +5,7 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const fontSans = FontSans({
@@ -56,10 +57,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          defer
+        <Script
           src="https://umami.pepi.codes/script.js"
           data-website-id="1ac4cbc1-7b53-4517-b1fb-1ceaaeafe5ab"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "4e7d79b944524a3980df696e96f933a6"}'
+          strategy="afterInteractive"
         />
       </head>
       <body

@@ -50,7 +50,6 @@ export const DATA = {
     { name: "Redis", icon: <DiRedis size={24} /> },
     { name: "React", icon: <SiReact size={24} /> },
     { name: "React Native", icon: <TbBrandReactNative size={24} /> },
-    { name: "Expo", icon: <SiExpo size={24} /> },
     { name: "Docker", icon: <SiDocker size={24} /> },
     { name: "EVM", icon: <SiEthereum size={24} /> },
     { name: "SVM", icon: <SiSolana size={24} /> },
@@ -191,6 +190,30 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "MafiaBench",
+      href: "https://mafiabench.ai",
+      dates: "July 2026 - July 2026",
+      active: true,
+      description:
+        "Frontier AI models play Mafia — a benchmark measuring how well LLMs deceive and detect deception.",
+      technologies: [
+        "Typescript",
+        "Next.js",
+        "Bun",
+        "LLM APIs",
+        "Cloudflare Workers",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://mafiabench.ai",
+          icon: <IoMdGlobe size={16} />,
+        },
+      ],
+      image: "/projects/mafiabench.png",
+      video: "",
+    },
     {
       title: "Polymarket Bot",
       href: "#",
