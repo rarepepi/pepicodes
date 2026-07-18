@@ -12,12 +12,12 @@ export function ModeToggle() {
       variant="ghost"
       type="button"
       size="icon"
-      className="px-2"
+      className="relative px-2 motion-reduce:transform-none"
       aria-label="Toggle Theme"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <SunIcon className="h-[1.2rem] w-[1.2rem] text-neutral-800 dark:hidden dark:text-neutral-200" />
-      <MoonIcon className="hidden h-[1.2rem] w-[1.2rem] text-neutral-800 dark:block dark:text-neutral-200" />
+      <SunIcon className="theme-icon theme-icon-sun h-[1.2rem] w-[1.2rem] text-neutral-800 dark:text-neutral-200" />
+      <MoonIcon className="theme-icon theme-icon-moon h-[1.2rem] w-[1.2rem] text-neutral-800 dark:text-neutral-200" />
     </Button>
   );
 }

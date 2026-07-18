@@ -2,7 +2,13 @@
 
 import { cn } from "../../lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useReducedMotion,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import React, { PropsWithChildren, useRef } from "react";
 
 export interface DockProps extends VariantProps<typeof dockVariants> {
@@ -31,6 +37,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     ref
   ) => {
     const mousex = useMotionValue(Infinity);
+    const shouldReduceMotion = useReducedMotion();
 
     const renderChildren = () => {
       return React.Children.map(children, (child: any) => {
@@ -48,8 +55,12 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     return (
       <motion.div
         ref={ref}
-        onMouseMove={(e) => mousex.set(e.pageX)}
-        onMouseLeave={() => mousex.set(Infinity)}
+        onMouseMove={
+          shouldReduceMotion ? undefined : (event) => mousex.set(event.pageX)
+        }
+        onMouseLeave={
+          shouldReduceMotion ? undefined : () => mousex.set(Infinity)
+        }
         {...props}
         className={cn(dockVariants({ className }))}
       >
@@ -81,30 +92,36 @@ const DockIcon = ({
   ...props
 }: DockIconProps) => {
   const ref = useRef<HTMLDivElement>(null);
+  const shouldReduceMotion = useReducedMotion();
+  const baseSize = size ?? 40;
 
   const distanceCalc = useTransform(mousex, (val: number) => {
     const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthSync = useTransform(
+  const scaleSync = useTransform(
     distanceCalc,
     [-distance, 0, distance],
-    [40, magnification, 40]
+    [1, magnification / baseSize, 1]
   );
 
-  let width = useSpring(widthSync, {
+  const scale = useSpring(scaleSync, {
     mass: 0.1,
     stiffness: 150,
     damping: 12,
   });
+  const transform = useTransform(scale, (value) => `scale(${value})`);
 
   return (
     <motion.div
       ref={ref}
-      style={{ width }}
+      style={{
+        width: baseSize,
+        transform: shouldReduceMotion ? "scale(1)" : transform,
+      }}
       className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full",
+        "flex aspect-square origin-bottom cursor-pointer items-center justify-center rounded-full",
         className
       )}
       {...props}

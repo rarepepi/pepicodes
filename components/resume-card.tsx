@@ -41,21 +41,21 @@ export const ResumeCard = ({
   return (
     <Link
       href={href || "#"}
-      className="block cursor-pointer"
+      className="group block cursor-pointer rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring active:scale-[0.99]"
       onClick={handleClick}
       target="_blank"
     >
-      <Card className="flex">
+      <Card className="flex items-center rounded-2xl border border-transparent bg-transparent p-2.5 transition-[background-color,border-color,transform] duration-200 ease-out group-hover:border-border/70 group-hover:bg-card/70">
         <div className="flex-none">
-          <Avatar className="size-12 m-auto bg-muted-background dark:bg-foreground">
+          <Avatar className="m-auto size-10 border border-border/70 bg-muted dark:bg-foreground">
             <AvatarImage src={logoUrl} alt={altText} className="object-cover" />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
         </div>
-        <div className="flex-grow ml-4 items-center flex-col group">
-          <CardHeader>
-            <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+        <div className="ml-3 min-w-0 flex-grow">
+          <CardHeader className="gap-1">
+            <div className="flex items-start justify-between gap-4 text-base">
+              <h3 className="inline-flex min-w-0 items-center font-semibold leading-tight text-sm sm:text-base">
                 {title}
                 {badges && (
                   <span className="inline-flex gap-x-1">
@@ -72,16 +72,20 @@ export const ResumeCard = ({
                 )}
                 <ChevronRightIcon
                   className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                    "ml-1 size-4 shrink-0 opacity-0 transition-[transform,opacity] duration-200 ease-out group-hover:translate-x-0.5 group-hover:opacity-100",
                     isExpanded ? "rotate-90" : "rotate-0"
                   )}
                 />
               </h3>
-              <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
+              <div className="shrink-0 text-right text-[11px] tabular-nums text-muted-foreground sm:text-sm">
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {subtitle && (
+              <div className="line-clamp-2 font-sans text-xs leading-5 text-muted-foreground sm:text-sm">
+                {subtitle}
+              </div>
+            )}
           </CardHeader>
           {description && (
             <motion.div
@@ -92,10 +96,10 @@ export const ResumeCard = ({
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
-                duration: 0.7,
+                duration: 0.2,
                 ease: [0.16, 1, 0.3, 1],
               }}
-              className="mt-2 text-xs sm:text-sm"
+              className="mt-2 text-xs text-muted-foreground sm:text-sm"
             >
               {description}
             </motion.div>

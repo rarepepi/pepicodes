@@ -4,65 +4,66 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 210 11.1% 3.53%;
+    --background: 40 20% 97%;
+    --foreground: 220 28% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 11.1% 3.53%;
+    --card-foreground: 220 28% 9%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 210 11.1% 3.53%;
 
-    --primary: 0 0% 9%;
+    --primary: 158 62% 28%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 40 14% 92%;
+    --secondary-foreground: 220 28% 9%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: 40 14% 92%;
+    --muted-foreground: 218 10% 42%;
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 158 30% 91%;
+    --accent-foreground: 158 62% 22%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 40 8% 84%;
+    --input: 40 8% 84%;
+    --ring: 158 62% 28%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   }
 
   .dark {
-    --background: 210 11.1% 3.53%;
-    --foreground: 0 0% 98%;
+    --background: 222 28% 5%;
+    --foreground: 210 20% 96%;
 
-    --card: 210 11.1% 3.53%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 23% 8%;
+    --card-foreground: 210 20% 96%;
 
-    --popover: 210 11.1% 3.53%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 23% 8%;
+    --popover-foreground: 210 20% 96%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 157 78% 62%;
+    --primary-foreground: 222 28% 7%;
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220 18% 12%;
+    --secondary-foreground: 210 20% 96%;
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 220 18% 12%;
+    --muted-foreground: 215 14% 66%;
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 157 30% 14%;
+    --accent-foreground: 157 78% 72%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 157 78% 62%;
   }
 }
 
@@ -70,8 +71,159 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      radial-gradient(circle at 50% -12rem, hsl(var(--primary) / 0.16), transparent 34rem),
+      radial-gradient(hsl(var(--foreground) / 0.045) 1px, transparent 1px);
+    background-attachment: fixed;
+    background-size: auto, 24px 24px;
+  }
+  ::selection {
+    background: hsl(var(--primary) / 0.25);
+  }
+}
+
+@layer components {
+  .experience-details {
+    interpolate-size: allow-keywords;
+  }
+
+  .experience-details::details-content {
+    block-size: 0;
+    overflow: clip;
+    opacity: 0;
+    transition:
+      block-size 220ms var(--ease-out),
+      opacity 160ms ease,
+      content-visibility 220ms allow-discrete;
+  }
+
+  .experience-details[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+  }
+
+  .fine-lift {
+    transition:
+      transform 200ms var(--ease-out),
+      border-color 200ms ease,
+      background-color 200ms ease,
+      box-shadow 200ms ease;
+  }
+
+  .fine-lift-media {
+    transition: transform 300ms var(--ease-out);
+  }
+
+  .fine-lift-arrow {
+    transition:
+      color 200ms ease,
+      transform 200ms var(--ease-out);
+  }
+
+  .tooltip-content {
+    transform-origin: var(--radix-tooltip-content-transform-origin);
+  }
+
+  .tooltip-content[data-state="delayed-open"] {
+    animation: tooltip-in 150ms var(--ease-out) both;
+  }
+
+  .tooltip-content[data-state="instant-open"] {
+    animation: none;
+  }
+
+  .tooltip-content[data-state="closed"] {
+    animation: tooltip-out 100ms ease both;
+  }
+
+  .link-preview-content {
+    transform-origin: var(--radix-hover-card-content-transform-origin);
+  }
+
+  .link-preview-content[data-state="open"] {
+    animation: link-preview-in 180ms var(--ease-out) both;
+  }
+
+  .link-preview-content[data-state="closed"] {
+    animation: link-preview-out 140ms ease both;
+  }
+
+  .theme-icon {
+    position: absolute;
+    transition:
+      opacity 120ms ease,
+      transform 160ms var(--ease-out);
+  }
+
+  .theme-icon-sun {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+
+  .theme-icon-moon {
+    opacity: 0;
+    transform: scale(0.92) rotate(-20deg);
+  }
+
+  .dark .theme-icon-sun {
+    opacity: 0;
+    transform: scale(0.92) rotate(20deg);
+  }
+
+  .dark .theme-icon-moon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .fine-lift[data-actionable="true"]:hover {
+    transform: translateY(-0.25rem);
+    border-color: hsl(var(--primary) / 0.4);
+    background-color: hsl(var(--card));
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.1);
+  }
+
+  .fine-lift[data-actionable="true"]:hover .fine-lift-media {
+    transform: scale(1.025);
+  }
+
+  .fine-lift[data-actionable="true"]:hover .fine-lift-arrow {
+    color: hsl(var(--primary));
+    transform: translate(0.125rem, -0.125rem);
+  }
+}
+
+@keyframes tooltip-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+@keyframes tooltip-out {
+  to {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+@keyframes link-preview-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+}
+
+@keyframes link-preview-out {
+  to {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
   }
 }
 
@@ -143,13 +295,62 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
 
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding: 0;
-  margin: 0;
-  z-index: -1;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .experience-details::details-content {
+    transition: opacity 150ms ease;
+  }
+
+  .fine-lift,
+  .fine-lift-media,
+  .fine-lift-arrow {
+    transform: none !important;
+  }
+
+  .fine-lift {
+    transition-property: border-color, background-color, box-shadow, opacity;
+    transition-duration: 150ms;
+  }
+
+  .fine-lift-media,
+  .fine-lift-arrow {
+    transition-property: color, opacity;
+    transition-duration: 150ms;
+  }
+
+  .tooltip-content[data-state="delayed-open"] {
+    animation: fade-in 150ms ease both;
+  }
+
+  .tooltip-content[data-state="closed"] {
+    animation: fade-out 100ms ease both;
+  }
+
+  .link-preview-content[data-state="open"] {
+    animation: fade-in 150ms ease both;
+  }
+
+  .link-preview-content[data-state="closed"] {
+    animation: fade-out 100ms ease both;
+  }
+
+  .theme-icon {
+    transform: none !important;
+    transition: opacity 150ms ease;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
 }
